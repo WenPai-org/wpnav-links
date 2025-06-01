@@ -22,7 +22,7 @@ class WPNAV_Public {
     public function enqueue_scripts() {
         wp_enqueue_script(
             'wpnav-redirect-script',
-            WPNAV_LINKS_PLUGIN_URL . 'redirect.js',
+            WPNAV_LINKS_PLUGIN_URL . 'assets/js/redirect.js',
             array('jquery'),
             WPNAV_LINKS_VERSION,
             true

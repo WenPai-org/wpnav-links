@@ -1,5 +1,5 @@
 === WPNav Links ===
-Contributors: wpnavlinks
+Contributors: WenPai
 Tags: external links, redirect, security, links, SEO
 Requires at least: 5.0
 Tested up to: 6.4

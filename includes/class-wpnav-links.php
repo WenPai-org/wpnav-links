@@ -231,7 +231,7 @@ class WPNAV_Links {
     private function load_redirect_template($url, $ref) {
         wp_enqueue_style(
             'wpnav-redirect-style',
-            WPNAV_LINKS_PLUGIN_URL . 'frontend.css',
+            WPNAV_LINKS_PLUGIN_URL . 'assets/css/frontend.css',
             array(),
             WPNAV_LINKS_VERSION
         );
@@ -239,7 +239,7 @@ class WPNAV_Links {
         $template_locations = array(
             get_stylesheet_directory() . '/wpnav-redirect-template.php',
             get_template_directory() . '/wpnav-redirect-template.php',
-            WPNAV_LINKS_PLUGIN_DIR . 'redirect-template.php'
+            WPNAV_LINKS_PLUGIN_DIR . 'templates/redirect-template.php'
         );
 
         foreach ($template_locations as $template) {
@@ -249,7 +249,7 @@ class WPNAV_Links {
             }
         }
 
-        include WPNAV_LINKS_PLUGIN_DIR . 'redirect-template.php';
+        include WPNAV_LINKS_PLUGIN_DIR . 'templates/redirect-template.php';
     }
 
     public function get_redirect_url($url) {

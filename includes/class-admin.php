@@ -36,14 +36,14 @@ class WPNAV_Admin {
 
         wp_enqueue_style(
             'wpnav-admin-style',
-            WPNAV_LINKS_PLUGIN_URL . 'admin.css',
+            WPNAV_LINKS_PLUGIN_URL . 'assets/css/admin.css',
             array(),
             WPNAV_LINKS_VERSION
         );
 
         wp_enqueue_script(
             'wpnav-admin-script',
-            WPNAV_LINKS_PLUGIN_URL . 'admin.js',
+            WPNAV_LINKS_PLUGIN_URL . 'assets/js/admin.js',
             array('jquery'),
             WPNAV_LINKS_VERSION,
             true
@@ -81,7 +81,7 @@ class WPNAV_Admin {
     }
 
     public function display_admin_page() {
-        include WPNAV_LINKS_PLUGIN_DIR . 'admin-page.php';
+        include WPNAV_LINKS_PLUGIN_DIR . 'admin/admin-page.php';
     }
 
     public function ajax_export_stats() {

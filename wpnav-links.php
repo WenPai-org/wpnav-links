@@ -25,9 +25,9 @@ define('WPNAV_LINKS_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WPNAV_LINKS_DB_VERSION', '1.2.0');
 define('WPNAV_LINKS_TABLE', 'nav_link_redirects');
 
-require_once WPNAV_LINKS_PLUGIN_DIR . 'class-wpnav-links.php';
-require_once WPNAV_LINKS_PLUGIN_DIR . 'class-admin.php';
-require_once WPNAV_LINKS_PLUGIN_DIR . 'class-public.php';
+require_once WPNAV_LINKS_PLUGIN_DIR . 'includes/class-wpnav-links.php';
+require_once WPNAV_LINKS_PLUGIN_DIR . 'includes/class-admin.php';
+require_once WPNAV_LINKS_PLUGIN_DIR . 'includes/class-public.php';
 
 function wpnav_activate_plugin() {
     $plugin = new WPNAV_Links();
@@ -482,9 +482,8 @@ add_filter('plugin_row_meta', 'wpnav_plugin_row_meta', 10, 2);
 function wpnav_plugin_row_meta($links, $file) {
     if (plugin_basename(__FILE__) === $file) {
         $row_meta = array(
-            'settings' => '<a href="' . admin_url('tools.php?page=wpnav-links') . '">' . esc_html__('Settings', 'wpnav-links') . '</a>',
-            'support' => '<a href="https://example.com/support" target="_blank">' . esc_html__('Support', 'wpnav-links') . '</a>',
-            'docs' => '<a href="https://example.com/docs" target="_blank">' . esc_html__('Documentation', 'wpnav-links') . '</a>',
+            'support' => '<a href="https://sharecms.com/forums" target="_blank">' . esc_html__('Support', 'wpnav-links') . '</a>',
+            'document' => '<a href="https://wpnav.com/document/wpnav-links" target="_blank">' . esc_html__('Document', 'wpnav-links') . '</a>',
         );
         return array_merge($links, $row_meta);
     }
@@ -512,7 +511,7 @@ function wpnav_enqueue_frontend_styles() {
     if (!is_admin()) {
         wp_enqueue_style(
             'wpnav-external-indicator',
-            WPNAV_LINKS_PLUGIN_URL . 'external-indicator.css',
+            WPNAV_LINKS_PLUGIN_URL . 'assets/css/external-indicator.css',
             array(),
             WPNAV_LINKS_VERSION
         );
