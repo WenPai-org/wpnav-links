@@ -1,0 +1,964 @@
+# Chinese (China) translation for WPNav Links
+# Copyright (C) 2024 WPNav Links
+# This file is distributed under the same license as the WPNav Links package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPNav Links 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpnav-links\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"PO-Revision-Date: 2025-06-01 06:26+0800\n"
+"Last-Translator: WPNav Links Team\n"
+"Language-Team: Chinese (China)\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.6\n"
+
+#: wpnav-links.php:100
+msgid "External Links Monitor"
+msgstr "外链监控"
+
+#: wpnav-links.php:150
+msgid "Active"
+msgstr "已启用"
+
+#: wpnav-links.php:150
+msgid "Inactive"
+msgstr "未启用"
+
+#: wpnav-links.php:153
+msgid "Manual Only"
+msgstr "仅手动"
+
+#: wpnav-links.php:159
+msgid "Total Redirects"
+msgstr "总跳转数"
+
+#: wpnav-links.php:164
+msgid "Today"
+msgstr "今天"
+
+#: wpnav-links.php:172
+msgid "Last 7 Days"
+msgstr "最近7天"
+
+#: wpnav-links.php:177
+msgid "Whitelisted"
+msgstr "白名单"
+
+#: wpnav-links.php:184
+msgid "Top Domains This Week"
+msgstr "本周热门域名"
+
+#: wpnav-links.php:199
+msgid "No external link activity yet."
+msgstr "暂无外链活动记录。"
+
+#: wpnav-links.php:201
+msgid "Enable the plugin to start tracking external links."
+msgstr "启用插件开始跟踪外链。"
+
+#: wpnav-links.php:208
+msgid "Enable Plugin"
+msgstr "启用插件"
+
+#: wpnav-links.php:210
+msgid "View Details"
+msgstr "查看详情"
+
+#: wpnav-links.php:213
+msgid "Manage Whitelist"
+msgstr "管理白名单"
+
+#: wpnav-links.php:322
+msgid "Settings"
+msgstr "设置"
+
+#: wpnav-links.php:323
+msgid "Support"
+msgstr "支持"
+
+#: wpnav-links.php:324
+msgid "Documentation"
+msgstr "文档"
+
+#: class-wpnav-links.php:50 class-admin.php:21
+msgid "External Links"
+msgstr "外部链接"
+
+#: class-wpnav-links.php:80
+msgid "Invalid or missing URL parameter"
+msgstr "无效或缺失的URL参数"
+
+#: class-wpnav-links.php:85
+msgid "Invalid URL format"
+msgstr "无效的URL格式"
+
+#: class-wpnav-links.php:169
+msgid "Redirect Error: "
+msgstr "跳转错误："
+
+#: class-wpnav-links.php:170
+msgid "External Link Redirect Error"
+msgstr "外链跳转错误"
+
+#: class-admin.php:20
+msgid "External Links Redirect"
+msgstr "外链跳转"
+
+#: class-admin.php:49
+msgid "Security check failed"
+msgstr "安全检查失败"
+
+#: class-admin.php:53
+msgid "Insufficient permissions"
+msgstr "权限不足"
+
+#: class-admin.php:60
+msgid "Target URL"
+msgstr "目标URL"
+
+#: class-admin.php:61 admin-page.php:776
+msgid "Source Page"
+msgstr "来源页面"
+
+#: class-admin.php:62
+msgid "Click Time"
+msgstr "点击时间"
+
+#: class-admin.php:63
+msgid "IP Address"
+msgstr "IP地址"
+
+#: class-admin.php:64
+msgid "User Agent"
+msgstr "用户代理"
+
+#: admin-page.php:25
+msgid "You do not have sufficient permissions to access this page."
+msgstr "您没有足够的权限访问此页面。"
+
+#: admin-page.php:47
+msgid "Basic settings saved successfully!"
+msgstr "基本设置保存成功！"
+
+#: admin-page.php:49
+msgid "Failed to save basic settings. Database error."
+msgstr "保存基本设置失败。数据库错误。"
+
+#: admin-page.php:67
+msgid "Whitelist settings saved successfully!"
+msgstr "白名单设置保存成功！"
+
+#: admin-page.php:69
+msgid "Failed to save whitelist settings. Database error."
+msgstr "保存白名单设置失败。数据库错误。"
+
+#: admin-page.php:99
+msgid "Redirect page settings saved successfully!"
+msgstr "跳转页面设置保存成功！"
+
+#: admin-page.php:101
+msgid "Failed to save redirect page settings. Database error."
+msgstr "保存跳转页面设置失败。数据库错误。"
+
+#: admin-page.php:127
+msgid "Successfully imported %d domains."
+msgstr "成功导入 %d 个域名。"
+
+#: admin-page.php:129
+msgid "Failed to import CSV data. Database error."
+msgstr "导入CSV数据失败。数据库错误。"
+
+#: admin-page.php:132
+msgid "No valid domains found in the CSV file."
+msgstr "CSV文件中未找到有效域名。"
+
+#: admin-page.php:135
+msgid "Please select a CSV file to upload."
+msgstr "请选择要上传的CSV文件。"
+
+#: admin-page.php:145
+msgid "Settings saved successfully!"
+msgstr "设置保存成功！"
+
+#: admin-page.php:183
+msgid "Custom Template Detected:"
+msgstr "检测到自定义模板："
+
+#: admin-page.php:183
+msgid ""
+"Your theme has a custom redirect template. Settings below may not apply if "
+"your custom template doesn't support them."
+msgstr ""
+"您的主题有自定义跳转模板。如果您的自定义模板不支持，以下设置可能不会生效。"
+
+#: admin-page.php:187
+msgid "Basic Settings"
+msgstr "基本设置"
+
+#: admin-page.php:190
+msgid "Redirect Page"
+msgstr "跳转页面"
+
+#: admin-page.php:193
+msgid "Whitelist"
+msgstr "白名单"
+
+#: admin-page.php:196
+msgid "Statistics"
+msgstr "统计"
+
+#: admin-page.php:199
+msgid "Import/Export"
+msgstr "导入/导出"
+
+#: admin-page.php:208
+msgid "Enable Redirect"
+msgstr "启用跳转"
+
+#: admin-page.php:211
+msgid "Enable external link redirect functionality"
+msgstr "启用外链跳转功能"
+
+#: admin-page.php:215
+msgid "Auto Redirect"
+msgstr "自动跳转"
+
+#: admin-page.php:218
+msgid "Enable automatic redirect"
+msgstr "启用自动跳转"
+
+#: admin-page.php:219
+msgid ""
+"When enabled, users will be automatically redirected after the specified "
+"delay."
+msgstr "启用后，用户将在指定延迟后自动跳转。"
+
+#: admin-page.php:223
+msgid "Redirect Delay"
+msgstr "跳转延迟"
+
+#: admin-page.php:226
+msgid "Seconds to wait before automatic redirect (1-30 seconds)."
+msgstr "自动跳转前等待的秒数（1-30秒）。"
+
+#: admin-page.php:230
+msgid "Open in New Tab"
+msgstr "新标签页打开"
+
+#: admin-page.php:233
+msgid "Open external links in new tab/window"
+msgstr "在新标签页/窗口中打开外部链接"
+
+#: admin-page.php:237
+msgid "URL Format"
+msgstr "URL格式"
+
+#: admin-page.php:241
+msgid "Query Format (?url=encoded_url)"
+msgstr "查询格式 (?url=encoded_url)"
+
+#: admin-page.php:245
+msgid "Path Format (/go/encoded_url)"
+msgstr "路径格式 (/go/encoded_url)"
+
+#: admin-page.php:249
+msgid "Target Format (?target=encoded_url)"
+msgstr "目标格式 (?target=encoded_url)"
+
+#: admin-page.php:252
+msgid "Choose URL format style for external link redirects."
+msgstr "选择外链跳转的URL格式样式。"
+
+#: admin-page.php:257
+msgid "Content Processing"
+msgstr "内容处理"
+
+#: admin-page.php:260
+msgid "Process Post Content"
+msgstr "处理文章内容"
+
+#: admin-page.php:263
+msgid "Process external links in post and page content"
+msgstr "处理文章和页面内容中的外部链接"
+
+#: admin-page.php:267
+msgid "Process Comments"
+msgstr "处理评论"
+
+#: admin-page.php:270
+msgid "Process external links in comments"
+msgstr "处理评论中的外部链接"
+
+#: admin-page.php:274
+msgid "Process Widgets"
+msgstr "处理小工具"
+
+#: admin-page.php:277
+msgid "Process external links in widgets"
+msgstr "处理小工具中的外部链接"
+
+#: admin-page.php:281
+msgid "Exclude CSS Class"
+msgstr "排除CSS类"
+
+#: admin-page.php:284
+msgid "Links with this CSS class will not be redirected."
+msgstr "具有此CSS类的链接将不会被跳转。"
+
+#: admin-page.php:289
+msgid "User Experience"
+msgstr "用户体验"
+
+#: admin-page.php:292
+msgid "Admin Exempt"
+msgstr "管理员免跳转"
+
+#: admin-page.php:295
+msgid "Skip redirect page for admin users"
+msgstr "为管理员用户跳过跳转页面"
+
+#: admin-page.php:299
+msgid "Cookie Duration"
+msgstr "Cookie持续时间"
+
+#: admin-page.php:302
+msgid "Days to remember user's \"Do not show again\" preference."
+msgstr "记住用户\"不再显示\"偏好的天数。"
+
+#: admin-page.php:306
+msgid "Stats Retention"
+msgstr "统计保留"
+
+#: admin-page.php:309
+msgid "Days to retain statistics data before automatic cleanup."
+msgstr "自动清理前保留统计数据的天数。"
+
+#: admin-page.php:314
+msgid "Save Settings"
+msgstr "保存设置"
+
+#: admin-page.php:322
+msgid "Domain Whitelist Management"
+msgstr "域名白名单管理"
+
+#: admin-page.php:324
+msgid ""
+"Manage domains that should not be redirected through the external link page."
+msgstr "管理不应通过外链页面跳转的域名。"
+
+#: admin-page.php:331
+msgid "Domain List"
+msgstr "域名列表"
+
+#: admin-page.php:334
+msgid "Add Common"
+msgstr "添加常用"
+
+#: admin-page.php:335
+msgid "Clear All"
+msgstr "清空全部"
+
+#: admin-page.php:339
+msgid ""
+"Enter domains that should not redirect, one per line. Example: google.com "
+"(do not include http:// or https://)"
+msgstr ""
+"输入不应跳转的域名，每行一个。示例：google.com（不要包含http://或https://）"
+
+#: admin-page.php:343
+msgid "Click to add common domains to your whitelist:"
+msgstr "点击将常用域名添加到您的白名单："
+
+#: admin-page.php:345
+msgid "Google"
+msgstr "谷歌"
+
+#: admin-page.php:346
+msgid "Baidu"
+msgstr "百度"
+
+#: admin-page.php:347
+msgid "Bing"
+msgstr "必应"
+
+#: admin-page.php:348
+msgid "YouTube"
+msgstr "优酷"
+
+#: admin-page.php:349
+msgid "Facebook"
+msgstr "脸书"
+
+#: admin-page.php:350
+msgid "Twitter"
+msgstr "推特"
+
+#: admin-page.php:351
+msgid "LinkedIn"
+msgstr "领英"
+
+#: admin-page.php:352
+msgid "Instagram"
+msgstr "Instagram"
+
+#: admin-page.php:356
+msgid "Auto Whitelist Rules"
+msgstr "自动白名单规则"
+
+#: admin-page.php:362
+msgid "Same root domain no redirect"
+msgstr "相同根域名不跳转"
+
+#: admin-page.php:364
+msgid ""
+"Subdomains of your site won't redirect (e.g., blog.example.com and "
+"shop.example.com)"
+msgstr "您网站的子域名不会跳转（例如：blog.example.com 和 shop.example.com）"
+
+#: admin-page.php:371
+msgid "Search engines no redirect"
+msgstr "搜索引擎不跳转"
+
+#: admin-page.php:373
+msgid "Major search engines (Google, Baidu, Bing, etc.) won't redirect"
+msgstr "主要搜索引擎（谷歌、百度、必应等）不会跳转"
+
+#: admin-page.php:380
+msgid "Save Whitelist"
+msgstr "保存白名单"
+
+#: admin-page.php:388
+msgid "Redirect Page Design"
+msgstr "跳转页面设计"
+
+#: admin-page.php:389
+msgid ""
+"Customize the appearance and content of the redirect warning page shown to "
+"users."
+msgstr "自定义显示给用户的跳转警告页面的外观和内容。"
+
+#: admin-page.php:396
+msgid "Template Style"
+msgstr "模板样式"
+
+#: admin-page.php:401
+msgid "Simple"
+msgstr "简洁"
+
+#: admin-page.php:401
+msgid "Ultra-minimal design with just essentials"
+msgstr "极简设计，仅包含必要元素"
+
+#: admin-page.php:405
+msgid "Minimal"
+msgstr "简约"
+
+#: admin-page.php:405
+msgid "Clean and lightweight design"
+msgstr "简洁轻量的设计"
+
+#: admin-page.php:409 admin-page.php:851
+msgid "Default"
+msgstr "默认"
+
+#: admin-page.php:409
+msgid "Balanced information display"
+msgstr "平衡的信息显示"
+
+#: admin-page.php:413
+msgid "Full"
+msgstr "完整"
+
+#: admin-page.php:413
+msgid "Comprehensive with security info"
+msgstr "包含安全信息的综合版"
+
+#: admin-page.php:418
+msgid "Color Scheme"
+msgstr "配色方案"
+
+#: admin-page.php:421
+msgid "Blue - Professional"
+msgstr "蓝色 - 专业"
+
+#: admin-page.php:422
+msgid "Green - Safe"
+msgstr "绿色 - 安全"
+
+#: admin-page.php:423
+msgid "Red - Warning"
+msgstr "红色 - 警告"
+
+#: admin-page.php:427
+msgid "Page Content"
+msgstr "页面内容"
+
+#: admin-page.php:430
+msgid "Page Title:"
+msgstr "页面标题："
+
+#: admin-page.php:434
+msgid "Page Subtitle (optional):"
+msgstr "页面副标题（可选）："
+
+#: admin-page.php:438
+msgid "URL Label:"
+msgstr "URL标签："
+
+#: admin-page.php:443
+msgid "Display Options"
+msgstr "显示选项"
+
+#: admin-page.php:448
+msgid "Show warning message"
+msgstr "显示警告信息"
+
+#: admin-page.php:452
+msgid "Show site logo"
+msgstr "显示站点Logo"
+
+#: admin-page.php:456
+msgid "Show full URL below domain"
+msgstr "在域名下方显示完整URL"
+
+#: admin-page.php:460
+msgid "Show HTTPS security status"
+msgstr "显示HTTPS安全状态"
+
+#: admin-page.php:464
+msgid "Show security tips and warnings"
+msgstr "显示安全提示和警告"
+
+#: admin-page.php:468
+msgid "Show back button"
+msgstr "显示返回按钮"
+
+#: admin-page.php:473
+msgid "Warning Message"
+msgstr "警告信息"
+
+#: admin-page.php:476
+msgid ""
+"Main warning message displayed to users. Leave empty to hide the warning box."
+msgstr "显示给用户的主要警告信息。留空则隐藏警告框。"
+
+#: admin-page.php:480
+msgid "Button Settings"
+msgstr "按钮设置"
+
+#: admin-page.php:483
+msgid "Continue Button Text:"
+msgstr "继续按钮文本："
+
+#: admin-page.php:487
+msgid "Back Button Text:"
+msgstr "返回按钮文本："
+
+#: admin-page.php:491
+msgid "Button Style:"
+msgstr "按钮样式："
+
+#: admin-page.php:494
+msgid "Rounded"
+msgstr "圆角"
+
+#: admin-page.php:495
+msgid "Square"
+msgstr "方形"
+
+#: admin-page.php:496
+msgid "Pill Shape"
+msgstr "药丸形"
+
+#: admin-page.php:501
+msgid "Countdown Settings"
+msgstr "倒计时设置"
+
+#: admin-page.php:504
+msgid "Countdown Text:"
+msgstr "倒计时文本："
+
+#: admin-page.php:506
+msgid "Use {seconds} as placeholder for countdown number"
+msgstr "使用 {seconds} 作为倒计时数字的占位符"
+
+#: admin-page.php:511
+msgid "Show progress bar during countdown"
+msgstr "倒计时期间显示进度条"
+
+#: admin-page.php:516
+msgid "Custom CSS"
+msgstr "自定义CSS"
+
+#: admin-page.php:519
+msgid "Add custom CSS to further customize the redirect page appearance"
+msgstr "添加自定义CSS进一步自定义跳转页面外观"
+
+#: admin-page.php:524
+msgid "Save Redirect Page Settings"
+msgstr "保存跳转页面设置"
+
+#: admin-page.php:530
+msgid "Live Preview"
+msgstr "实时预览"
+
+#: admin-page.php:580 redirect-template.php:252
+msgid "Security Tips"
+msgstr "安全提示"
+
+#: admin-page.php:582 redirect-template.php:255
+msgid "Verify the link is from a trusted source"
+msgstr "验证链接来自可信来源"
+
+#: admin-page.php:583 redirect-template.php:258
+msgid "Check for secure HTTPS connection"
+msgstr "检查安全的HTTPS连接"
+
+#: admin-page.php:608
+msgid "Import Whitelist"
+msgstr "导入白名单"
+
+#: admin-page.php:609
+msgid "Upload CSV file to bulk import domains to your whitelist."
+msgstr "上传CSV文件批量导入域名到您的白名单。"
+
+#: admin-page.php:616
+msgid "CSV File"
+msgstr "CSV文件"
+
+#: admin-page.php:619
+msgid "Select a CSV file containing domain names (one per line)"
+msgstr "选择包含域名的CSV文件（每行一个）"
+
+#: admin-page.php:624
+msgid "Import CSV"
+msgstr "导入CSV"
+
+#: admin-page.php:630
+msgid "Export Whitelist"
+msgstr "导出白名单"
+
+#: admin-page.php:631
+msgid "Download current whitelist domains as CSV file."
+msgstr "将当前白名单域名下载为CSV文件。"
+
+#: admin-page.php:635
+msgid "Downloads a CSV file with all whitelisted domains."
+msgstr "下载包含所有白名单域名的CSV文件。"
+
+#: admin-page.php:640
+msgid "Export Statistics"
+msgstr "导出统计"
+
+#: admin-page.php:641
+msgid "Download statistics data for the selected date range."
+msgstr "下载选定日期范围的统计数据。"
+
+#: admin-page.php:647
+msgid "Start Date:"
+msgstr "开始日期："
+
+#: admin-page.php:648
+msgid "End Date:"
+msgstr "结束日期："
+
+#: admin-page.php:654
+msgid "Downloads a CSV file with redirect statistics data."
+msgstr "下载包含跳转统计数据的CSV文件。"
+
+#: admin-page.php:662
+msgid "Access Statistics"
+msgstr "访问统计"
+
+#: admin-page.php:663
+msgid "View external link access statistics and logs."
+msgstr "查看外链访问统计和日志。"
+
+#: admin-page.php:668
+msgid "Top External Links"
+msgstr "热门外链"
+
+#: admin-page.php:676
+msgid "%s clicks"
+msgstr "%s 次点击"
+
+#: admin-page.php:684
+msgid ""
+"No data available yet. Top links will appear here after users start clicking "
+"external links."
+msgstr "暂无数据。用户开始点击外链后，热门链接将显示在这里。"
+
+#: admin-page.php:689
+msgid "Activity Overview"
+msgstr "活动概览"
+
+#: admin-page.php:705
+msgid "This Month"
+msgstr "本月"
+
+#: admin-page.php:709
+msgid "Total Records"
+msgstr "总记录数"
+
+#: admin-page.php:713
+msgid "Pages"
+msgstr "页面"
+
+#: admin-page.php:717
+msgid "Daily Avg"
+msgstr "日均"
+
+#: admin-page.php:721
+msgid "Unique Domains"
+msgstr "独立域名"
+
+#: admin-page.php:726
+msgid "HTTPS Links"
+msgstr "HTTPS链接"
+
+#: admin-page.php:730
+msgid "HTTP Links"
+msgstr "HTTP链接"
+
+#: admin-page.php:744
+msgid "Usage Guide"
+msgstr "使用指南"
+
+#: admin-page.php:746
+msgid "Enable redirect functionality in basic settings"
+msgstr "在基本设置中启用跳转功能"
+
+#: admin-page.php:747
+msgid "Configure which content areas to process"
+msgstr "配置要处理的内容区域"
+
+#: admin-page.php:748
+msgid "Customize redirect page appearance"
+msgstr "自定义跳转页面外观"
+
+#: admin-page.php:749
+msgid "Add domains to whitelist that should not redirect"
+msgstr "将不应跳转的域名添加到白名单"
+
+#: admin-page.php:750
+msgid "View access data in statistics tab"
+msgstr "在统计标签页中查看访问数据"
+
+#: admin-page.php:761
+msgid "Date Range"
+msgstr "日期范围"
+
+#: admin-page.php:765
+msgid "to"
+msgstr "至"
+
+#: admin-page.php:767
+msgid "Apply Filter"
+msgstr "应用筛选"
+
+#: admin-page.php:768
+msgid "Reset"
+msgstr "重置"
+
+#: admin-page.php:777
+msgid "Time"
+msgstr "时间"
+
+#: admin-page.php:779
+msgid "Security"
+msgstr "安全性"
+
+#: admin-page.php:793
+msgid "N/A"
+msgstr "不适用"
+
+#: admin-page.php:818
+msgid "Page %1$s of %2$s"
+msgstr "第 %1$s 页，共 %2$s 页"
+
+#: admin-page.php:828
+msgid "No redirect records found for the selected date range."
+msgstr "在选定的日期范围内未找到跳转记录。"
+
+#: admin-page.php:829
+msgid ""
+"Records will appear here after users click on external links processed by "
+"the plugin."
+msgstr "用户点击插件处理的外链后，记录将显示在这里。"
+
+#: admin-page.php:836
+msgid "System Information"
+msgstr "系统信息"
+
+#: admin-page.php:841
+msgid "WordPress Version"
+msgstr "WordPress版本"
+
+#: admin-page.php:845
+msgid "PHP Version"
+msgstr "PHP版本"
+
+#: admin-page.php:849
+msgid "Permalink Structure"
+msgstr "固定链接结构"
+
+#: admin-page.php:855
+msgid "Database Table"
+msgstr "数据库表"
+
+#: admin-page.php:859
+msgid "Plugin URL"
+msgstr "插件URL"
+
+#: admin-page.php:863
+msgid "Custom Template"
+msgstr "自定义模板"
+
+#: admin-page.php:865
+msgid "Yes - Custom template detected"
+msgstr "是 - 检测到自定义模板"
+
+#: admin-page.php:865
+msgid "No - Using default template"
+msgstr "否 - 使用默认模板"
+
+#: redirect-template.php:25
+msgid "External Link Warning"
+msgstr "外链警告"
+
+#: redirect-template.php:27
+msgid "You are about to visit:"
+msgstr "您即将访问："
+
+#: redirect-template.php:28
+msgid ""
+"You are about to leave this site and visit an external website. We are not "
+"responsible for the content of external websites."
+msgstr "您即将离开本站并访问外部网站。我们不对外部网站的内容负责。"
+
+#: redirect-template.php:32
+msgid "Continue"
+msgstr "继续"
+
+#: redirect-template.php:33
+msgid "Back"
+msgstr "返回"
+
+#: redirect-template.php:35
+msgid "Auto redirect in {seconds} seconds"
+msgstr "{seconds} 秒后自动跳转"
+
+#: redirect-template.php:55
+msgid "External Link Redirect - %s"
+msgstr "外链跳转 - %s"
+
+#: redirect-template.php:146
+msgid "Don't show this again"
+msgstr "不再显示"
+
+#: redirect-template.php:213
+msgid "Destination Information"
+msgstr "目标信息"
+
+#: redirect-template.php:230
+msgid "Copy"
+msgstr "复制"
+
+#: redirect-template.php:238
+msgid "Security Status"
+msgstr "安全状态"
+
+#: redirect-template.php:244
+msgid ""
+"This website does not use HTTPS encryption. Your data may not be secure."
+msgstr "此网站未使用HTTPS加密。您的数据可能不安全。"
+
+#: redirect-template.php:256
+msgid "Avoid entering personal information on HTTP sites"
+msgstr "避免在HTTP网站上输入个人信息"
+
+#: redirect-template.php:257
+msgid "Be cautious of download requests"
+msgstr "谨慎对待下载请求"
+
+#: redirect-template.php:263
+msgid "Additional Caution Required"
+msgstr "需要额外注意"
+
+#: redirect-template.php:265
+msgid "This link does not use secure HTTPS"
+msgstr "此链接未使用安全的HTTPS"
+
+#: redirect-template.php:266
+msgid "Consider if this site is trustworthy before proceeding"
+msgstr "继续之前请考虑此网站是否值得信任"
+
+#: redirect-template.php:295
+msgid "Don't show this warning for %d days"
+msgstr "%d 天内不显示此警告"
+
+#: redirect-template.php:342
+msgid "Protected by %s"
+msgstr "受 %s 保护"
+
+#: redirect-template.php:385
+msgid "Don't show this again (%d days)"
+msgstr "不再显示（%d 天）"
+
+#: redirect-template.php:461
+msgid "Link copied to clipboard"
+msgstr "链接已复制到剪贴板"
+
+#: redirect-template.php:536
+msgid "External link (opens in a new window)"
+msgstr "外部链接（在新窗口中打开）"
+
+#: class-public.php:69
+msgid "External link"
+msgstr "外部链接"
+
+#: class-public.php:70 class-public.php:137
+msgid "(opens in a new window)"
+msgstr "（在新窗口中打开）"
+
+#: class-public.php:135
+msgid "opens in a new window"
+msgstr "在新窗口中打开"
+
+# Admin JavaScript strings
+msgid "Domain %s is already in the whitelist."
+msgstr "域名 %s 已经在白名单中。"
+
+msgid "Added %s to whitelist."
+msgstr "已将 %s 添加到白名单。"
+
+msgid "Added common domains to whitelist."
+msgstr "已将常用域名添加到白名单。"
+
+msgid "Whitelist cleared."
+msgstr "白名单已清空。"
+
+msgid "Are you sure you want to clear all domains from the whitelist?"
+msgstr "您确定要清空白名单中的所有域名吗？"
+
+msgid "Whitelist is empty, cannot export."
+msgstr "白名单为空，无法导出。"
+
+msgid "Whitelist exported successfully."
+msgstr "白名单导出成功。"
+
+msgid "Export not supported in this browser."
+msgstr "此浏览器不支持导出功能。"
+
+msgid "Saving..."
+msgstr "保存中..."
+
+msgid "Draft saved"
+msgstr "草稿已保存"
+
+msgid "A draft was found for this field. Would you like to restore it?"
+msgstr "发现此字段的草稿。您要恢复它吗？"

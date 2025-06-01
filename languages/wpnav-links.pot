@@ -1,0 +1,389 @@
+# Copyright (C) 2024 WPNav Links
+# This file is distributed under the same license as the WPNav Links package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPNav Links 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpnav-links\n"
+"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: wpnav-links.php:100
+msgid "External Links Monitor"
+msgstr ""
+
+#: wpnav-links.php:150
+msgid "Active"
+msgstr ""
+
+#: wpnav-links.php:150
+msgid "Inactive"
+msgstr ""
+
+#: wpnav-links.php:153
+msgid "Manual Only"
+msgstr ""
+
+#: wpnav-links.php:159
+msgid "Total Redirects"
+msgstr ""
+
+#: wpnav-links.php:164
+msgid "Today"
+msgstr ""
+
+#: wpnav-links.php:172
+msgid "Last 7 Days"
+msgstr ""
+
+#: wpnav-links.php:177
+msgid "Whitelisted"
+msgstr ""
+
+#: wpnav-links.php:184
+msgid "Top Domains This Week"
+msgstr ""
+
+#: wpnav-links.php:199
+msgid "No external link activity yet."
+msgstr ""
+
+#: wpnav-links.php:201
+msgid "Enable the plugin to start tracking external links."
+msgstr ""
+
+#: wpnav-links.php:208
+msgid "Enable Plugin"
+msgstr ""
+
+#: wpnav-links.php:210
+msgid "View Details"
+msgstr ""
+
+#: wpnav-links.php:213
+msgid "Manage Whitelist"
+msgstr ""
+
+#: wpnav-links.php:322
+msgid "Settings"
+msgstr ""
+
+#: wpnav-links.php:323
+msgid "Support"
+msgstr ""
+
+#: wpnav-links.php:324
+msgid "Documentation"
+msgstr ""
+
+#: class-wpnav-links.php:50
+msgid "External Links"
+msgstr ""
+
+#: class-wpnav-links.php:80
+msgid "Invalid or missing URL parameter"
+msgstr ""
+
+#: class-wpnav-links.php:85
+msgid "Invalid URL format"
+msgstr ""
+
+#: class-wpnav-links.php:169
+msgid "Redirect Error: "
+msgstr ""
+
+#: class-wpnav-links.php:170
+msgid "External Link Redirect Error"
+msgstr ""
+
+#: class-admin.php:20
+msgid "External Links Redirect"
+msgstr ""
+
+#: class-admin.php:21
+msgid "External Links"
+msgstr ""
+
+#: class-admin.php:49
+msgid "Security check failed"
+msgstr ""
+
+#: class-admin.php:53
+msgid "Insufficient permissions"
+msgstr ""
+
+#: class-admin.php:60
+msgid "Target URL"
+msgstr ""
+
+#: class-admin.php:61
+msgid "Source Page"
+msgstr ""
+
+#: class-admin.php:62
+msgid "Click Time"
+msgstr ""
+
+#: class-admin.php:63
+msgid "IP Address"
+msgstr ""
+
+#: class-admin.php:64
+msgid "User Agent"
+msgstr ""
+
+#: admin-page.php:25
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: admin-page.php:47
+msgid "Basic settings saved successfully!"
+msgstr ""
+
+#: admin-page.php:49
+msgid "Failed to save basic settings. Database error."
+msgstr ""
+
+#: admin-page.php:67
+msgid "Whitelist settings saved successfully!"
+msgstr ""
+
+#: admin-page.php:69
+msgid "Failed to save whitelist settings. Database error."
+msgstr ""
+
+#: admin-page.php:99
+msgid "Redirect page settings saved successfully!"
+msgstr ""
+
+#: admin-page.php:101
+msgid "Failed to save redirect page settings. Database error."
+msgstr ""
+
+#: admin-page.php:127
+msgid "Successfully imported %d domains."
+msgstr ""
+
+#: admin-page.php:129
+msgid "Failed to import CSV data. Database error."
+msgstr ""
+
+#: admin-page.php:132
+msgid "No valid domains found in the CSV file."
+msgstr ""
+
+#: admin-page.php:135
+msgid "Please select a CSV file to upload."
+msgstr ""
+
+#: admin-page.php:145
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: admin-page.php:183
+msgid "Custom Template Detected:"
+msgstr ""
+
+#: admin-page.php:183
+msgid "Your theme has a custom redirect template. Settings below may not apply if your custom template doesn't support them."
+msgstr ""
+
+#: admin-page.php:187
+msgid "Basic Settings"
+msgstr ""
+
+#: admin-page.php:190
+msgid "Redirect Page"
+msgstr ""
+
+#: admin-page.php:193
+msgid "Whitelist"
+msgstr ""
+
+#: admin-page.php:196
+msgid "Statistics"
+msgstr ""
+
+#: admin-page.php:199
+msgid "Import/Export"
+msgstr ""
+
+#: admin-page.php:208
+msgid "Enable Redirect"
+msgstr ""
+
+#: admin-page.php:211
+msgid "Enable external link redirect functionality"
+msgstr ""
+
+#: admin-page.php:215
+msgid "Auto Redirect"
+msgstr ""
+
+#: admin-page.php:218
+msgid "Enable automatic redirect"
+msgstr ""
+
+#: admin-page.php:219
+msgid "When enabled, users will be automatically redirected after the specified delay."
+msgstr ""
+
+#: admin-page.php:223
+msgid "Redirect Delay"
+msgstr ""
+
+#: admin-page.php:226
+msgid "Seconds to wait before automatic redirect (1-30 seconds)."
+msgstr ""
+
+#: admin-page.php:230
+msgid "Open in New Tab"
+msgstr ""
+
+#: admin-page.php:233
+msgid "Open external links in new tab/window"
+msgstr ""
+
+#: admin-page.php:237
+msgid "URL Format"
+msgstr ""
+
+#: admin-page.php:241
+msgid "Query Format (?url=encoded_url)"
+msgstr ""
+
+#: admin-page.php:245
+msgid "Path Format (/go/encoded_url)"
+msgstr ""
+
+#: admin-page.php:249
+msgid "Target Format (?target=encoded_url)"
+msgstr ""
+
+#: admin-page.php:252
+msgid "Choose URL format style for external link redirects."
+msgstr ""
+
+#: admin-page.php:257
+msgid "Content Processing"
+msgstr ""
+
+#: admin-page.php:260
+msgid "Process Post Content"
+msgstr ""
+
+#: admin-page.php:263
+msgid "Process external links in post and page content"
+msgstr ""
+
+#: redirect-template.php:25
+msgid "External Link Warning"
+msgstr ""
+
+#: redirect-template.php:27
+msgid "You are about to visit:"
+msgstr ""
+
+#: redirect-template.php:28
+msgid "You are about to leave this site and visit an external website. We are not responsible for the content of external websites."
+msgstr ""
+
+#: redirect-template.php:32
+msgid "Continue"
+msgstr ""
+
+#: redirect-template.php:33
+msgid "Back"
+msgstr ""
+
+#: redirect-template.php:35
+msgid "Auto redirect in {seconds} seconds"
+msgstr ""
+
+#: redirect-template.php:55
+msgid "External Link Redirect - %s"
+msgstr ""
+
+#: redirect-template.php:146
+msgid "Don't show this again"
+msgstr ""
+
+#: redirect-template.php:213
+msgid "Destination Information"
+msgstr ""
+
+#: redirect-template.php:230
+msgid "Copy"
+msgstr ""
+
+#: redirect-template.php:238
+msgid "Security Status"
+msgstr ""
+
+#: redirect-template.php:244
+msgid "This website does not use HTTPS encryption. Your data may not be secure."
+msgstr ""
+
+#: redirect-template.php:252
+msgid "Security Tips"
+msgstr ""
+
+#: redirect-template.php:255
+msgid "Verify the link is from a trusted source"
+msgstr ""
+
+#: redirect-template.php:256
+msgid "Avoid entering personal information on HTTP sites"
+msgstr ""
+
+#: redirect-template.php:257
+msgid "Be cautious of download requests"
+msgstr ""
+
+#: redirect-template.php:258
+msgid "Check for secure HTTPS connection"
+msgstr ""
+
+#: redirect-template.php:263
+msgid "Additional Caution Required"
+msgstr ""
+
+#: redirect-template.php:265
+msgid "This link does not use secure HTTPS"
+msgstr ""
+
+#: redirect-template.php:266
+msgid "Consider if this site is trustworthy before proceeding"
+msgstr ""
+
+#: redirect-template.php:295
+msgid "Don't show this warning for %d days"
+msgstr ""
+
+#: redirect-template.php:342
+msgid "Protected by %s"
+msgstr ""
+
+#: redirect-template.php:385
+msgid "Don't show this again (%d days)"
+msgstr ""
+
+#: redirect-template.php:461
+msgid "Link copied to clipboard"
+msgstr ""
+
+#: redirect-template.php:536
+msgid "External link (opens in a new window)"
+msgstr ""
+
+#: class-public.php:69
+msgid "External link"
+msgstr ""
+
+#: class-public.php:70
+msgid "(opens in a new window)"
+msgstr ""

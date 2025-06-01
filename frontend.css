@@ -1,0 +1,837 @@
+.wpnav-redirect-page *,
+.wpnav-redirect-page *::before,
+.wpnav-redirect-page *::after {
+    box-sizing: border-box;
+}
+
+.wpnav-redirect-page {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+    color: #2c3e50;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.wpnav-redirect-page.wpnav-color-blue {
+    background: #e3f2fd;
+}
+
+.wpnav-redirect-page.wpnav-color-green {
+    background: #e8f5e8;
+}
+
+.wpnav-redirect-page.wpnav-color-red {
+    background: #ffebee;
+}
+
+.wpnav-page-overlay {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.wpnav-container {
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e5e9;
+    text-align: center;
+    position: relative;
+    animation: wpnav-slideUp 0.6s ease-out;
+}
+
+@keyframes wpnav-slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.wpnav-simple {
+    max-width: 480px;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.wpnav-simple .wpnav-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.wpnav-simple .wpnav-url-container {
+    margin: 20px 0;
+}
+
+.wpnav-simple .wpnav-url {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.wpnav-simple .wpnav-url-domain {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wpnav-simple .wpnav-buttons {
+    gap: 10px;
+}
+
+.wpnav-simple .wpnav-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+.wpnav-simple .wpnav-countdown {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+.wpnav-minimal {
+    max-width: 680px;
+    padding: 30px;
+}
+
+.wpnav-full {
+    max-width: 880px;
+    padding: 50px;
+    text-align: left;
+}
+
+.wpnav-logo img {
+    max-height: 60px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    width: auto;
+    height: 60px;
+}
+
+@keyframes wpnav-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.wpnav-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #2c3e50;
+    letter-spacing: -0.5px;
+}
+
+.wpnav-subtitle {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin: 0 0 30px;
+    font-weight: 400;
+}
+
+.wpnav-minimal .wpnav-title {
+    font-size: 24px;
+}
+
+.wpnav-full .wpnav-title {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wpnav-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.wpnav-warning {
+    background: #fff3cd;
+    border: 1px solid #f39c12;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 20px;
+    margin: 30px 0;
+    color: #8b4513;
+    font-weight: 400;
+    box-shadow: 0 2px 4px rgba(243, 156, 18, 0.1);
+}
+
+.wpnav-url-container {
+    margin: 30px 0;
+}
+
+.wpnav-url-label {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.wpnav-url {
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    word-break: break-all;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.wpnav-url:hover {
+    border-color: #667eea;
+}
+
+.wpnav-url-domain {
+    font-weight: 700;
+    font-size: 18px;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.wpnav-url-path {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.wpnav-url-full {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 10px;
+    font-family: 'Monaco', 'Consolas', monospace;
+}
+
+.wpnav-security-status {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e9ecef;
+}
+
+.wpnav-security-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.wpnav-security-label {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+.wpnav-https-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.wpnav-https-badge.secure {
+    background-color: #00a32a;
+}
+
+.wpnav-https-badge.insecure {
+    background-color: #d63638;
+}
+
+.wpnav-security-warning {
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid rgba(231, 76, 60, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #c0392b;
+}
+
+.wpnav-security-tips {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.wpnav-security-tips h4 {
+    margin: 0 0 15px;
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wpnav-security-tips ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #5a6c7d;
+}
+
+.wpnav-security-tips li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.wpnav-copy-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.wpnav-copy-btn:hover {
+    background: #5a67d8;
+    transform: scale(1.05);
+}
+
+.wpnav-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.wpnav-info-item {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.wpnav-info-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 0 15px;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.wpnav-tips-list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    color: #5a6c7d;
+}
+
+.wpnav-tips-list li {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.wpnav-tips-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.wpnav-warning-tips {
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid rgba(231, 76, 60, 0.3);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.wpnav-warning-tips h4 {
+    color: #e74c3c;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.wpnav-actions {
+    margin-top: 40px;
+}
+
+.wpnav-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.wpnav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-family: inherit;
+    min-width: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wpnav-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.wpnav-btn:hover:before {
+    left: 100%;
+}
+
+.wpnav-btn-primary {
+    background: #667eea;
+    color: white;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.wpnav-btn-primary:hover {
+    background: #5a67d8;
+}
+
+.wpnav-btn-secondary {
+    background: #f8f9fa;
+    color: #5a6c7d;
+    border: 2px solid #e9ecef;
+}
+
+.wpnav-btn-secondary:hover {
+    background: white;
+    color: #2c3e50;
+    border-color: #bdc3c7;
+}
+
+.wpnav-options {
+    margin: 30px 0;
+}
+
+.wpnav-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #5a6c7d;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.wpnav-checkbox:hover {
+    color: #2c3e50;
+}
+
+.wpnav-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.wpnav-checkbox input:checked + .checkmark {
+    background: #667eea;
+    border-color: #667eea;
+}
+
+.wpnav-checkbox input:checked + .checkmark:after {
+    content: '✓';
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wpnav-countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(52, 152, 219, 0.2);
+}
+
+.countdown-circle {
+    position: relative;
+    animation: wpnav-rotate 1s linear infinite;
+}
+
+@keyframes wpnav-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#countdown-progress {
+    transition: stroke-dashoffset 1s linear;
+}
+
+.wpnav-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(233, 236, 239, 0.8);
+    text-align: center;
+}
+
+.wpnav-footer-text {
+    font-size: 12px;
+    color: #95a5a6;
+}
+
+.wpnav-footer-text a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.wpnav-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100px);
+    background: rgba(39, 174, 96, 0.95);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 10000;
+    transition: transform 0.3s ease;
+}
+
+.wpnav-toast.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+.wpnav-color-blue .wpnav-container {
+    border-color: #e3f2fd;
+}
+
+.wpnav-color-blue .wpnav-btn-primary {
+    background: #3498db;
+}
+
+.wpnav-color-blue .wpnav-btn-primary:hover {
+    background: #2980b9;
+}
+
+.wpnav-color-blue .wpnav-copy-btn {
+    background: #3498db;
+}
+
+.wpnav-color-green .wpnav-container {
+    border-color: #e8f5e8;
+}
+
+.wpnav-color-green .wpnav-btn-primary {
+    background: #27ae60;
+}
+
+.wpnav-color-green .wpnav-btn-primary:hover {
+    background: #229954;
+}
+
+.wpnav-color-green .wpnav-copy-btn {
+    background: #27ae60;
+}
+
+.wpnav-color-red .wpnav-container {
+    border-color: #ffebee;
+}
+
+.wpnav-color-red .wpnav-btn-primary {
+    background: #e74c3c;
+}
+
+.wpnav-color-red .wpnav-btn-primary:hover {
+    background: #c0392b;
+}
+
+.wpnav-color-red .wpnav-copy-btn {
+    background: #e74c3c;
+}
+
+@media screen and (max-width: 768px) {
+    .wpnav-page-overlay {
+        padding: 15px;
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+
+    .wpnav-container {
+        padding: 30px 25px;
+        margin: 0;
+        border-radius: 8px;
+        max-width: none;
+        width: 100%;
+    }
+
+    .wpnav-simple {
+        padding: 25px 20px;
+    }
+
+    .wpnav-simple .wpnav-title {
+        font-size: 20px;
+    }
+
+    .wpnav-simple .wpnav-url {
+        padding: 12px;
+    }
+
+    .wpnav-simple .wpnav-btn {
+        padding: 10px 16px;
+        font-size: 13px;
+        min-width: auto;
+    }
+
+    .wpnav-full {
+        padding: 30px 25px;
+    }
+
+    .wpnav-title {
+        font-size: 24px;
+    }
+
+    .wpnav-minimal .wpnav-title {
+        font-size: 22px;
+    }
+
+    .wpnav-full .wpnav-title {
+        font-size: 26px;
+    }
+
+    .wpnav-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .wpnav-btn {
+        width: 100%;
+        padding: 18px 20px;
+        font-size: 16px;
+    }
+
+    .wpnav-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    .wpnav-info-item {
+        padding: 20px;
+    }
+
+    .wpnav-url {
+        padding: 15px;
+    }
+
+    .wpnav-copy-btn {
+        position: static;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .wpnav-warning {
+        padding: 15px;
+        margin: 20px 0;
+    }
+
+    .wpnav-countdown {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .wpnav-security-tips {
+        padding: 15px;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .wpnav-container {
+        padding: 25px 20px;
+        border-radius: 6px;
+    }
+
+    .wpnav-simple {
+        padding: 20px 15px;
+        max-width: none;
+    }
+
+    .wpnav-simple .wpnav-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .wpnav-simple .wpnav-url-container {
+        margin: 15px 0;
+    }
+
+    .wpnav-simple .wpnav-url {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .wpnav-simple .wpnav-url-domain {
+        font-size: 14px;
+    }
+
+    .wpnav-simple .wpnav-buttons {
+        gap: 8px;
+        flex-direction: column;
+    }
+
+    .wpnav-simple .wpnav-btn {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 14px;
+        min-width: auto;
+    }
+
+    .wpnav-title {
+        font-size: 20px;
+    }
+
+    .wpnav-btn {
+        padding: 16px 20px;
+        font-size: 15px;
+        min-width: auto;
+    }
+
+    .wpnav-url-domain {
+        font-size: 16px;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .wpnav-btn:hover {
+        transform: none;
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    }
+
+    .wpnav-btn:active {
+        transform: scale(0.95);
+    }
+
+    .wpnav-url:hover {
+        transform: none;
+        border-color: #e9ecef;
+        box-shadow: none;
+    }
+}
+
+.wpnav-btn-rounded {
+    border-radius: 8px;
+}
+
+.wpnav-btn-square {
+    border-radius: 0;
+}
+
+.wpnav-btn-pill {
+    border-radius: 25px;
+}
+
+.wpnav-progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.wpnav-progress-fill {
+    height: 100%;
+    background: #667eea;
+    border-radius: 2px;
+    width: 100%;
+    transition: width 1s linear;
+}
+
+.wpnav-color-blue .wpnav-progress-fill {
+    background: #3498db;
+}
+
+.wpnav-color-green .wpnav-progress-fill {
+    background: #27ae60;
+}
+
+.wpnav-color-red .wpnav-progress-fill {
+    background: #e74c3c;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wpnav-redirect-page *,
+    .wpnav-redirect-page *::before,
+    .wpnav-redirect-page *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
