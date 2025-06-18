@@ -9,13 +9,11 @@ $plugin = new WPNAV_Links();
 $success_message = '';
 $error_message = '';
 
-// Check if WPCY.COM plugin is active
 function wpnav_is_wp_china_yes_active() {
     if (!function_exists('is_plugin_active')) {
         include_once(ABSPATH . 'wp-admin/includes/plugin.php');
     }
 
-    // Check for common WPCY.COM plugin paths
     $possible_plugins = array(
         'wp-china-yes/wp-china-yes.php',
         'wp-china-yes/index.php',
@@ -28,7 +26,6 @@ function wpnav_is_wp_china_yes_active() {
         }
     }
 
-    // Also check if the WP_CHINA_YES constant is defined
     return defined('WP_CHINA_YES');
 }
 
@@ -46,10 +43,10 @@ if (isset($_POST['wpnav_basic_nonce']) && wp_verify_nonce($_POST['wpnav_basic_no
         $options['redirect_delay'] = isset($_POST['redirect_delay']) ? max(1, min(30, intval($_POST['redirect_delay']))) : 5;
         $options['open_in_new_tab'] = isset($_POST['open_in_new_tab']) ? 1 : 0;
         $options['url_format'] = isset($_POST['url_format']) ? sanitize_text_field($_POST['url_format']) : 'query';
-        $options['intercept_content'] = isset($_POST['intercept_content']) ? 1 : 0;
         $options['intercept_comments'] = isset($_POST['intercept_comments']) ? 1 : 0;
         $options['intercept_widgets'] = isset($_POST['intercept_widgets']) ? 1 : 0;
         $options['exclude_css_class'] = isset($_POST['exclude_css_class']) ? sanitize_text_field($_POST['exclude_css_class']) : 'no-redirect';
+        $options['show_external_icon'] = isset($_POST['show_external_icon']) ? 1 : 0;
         $options['admin_exempt'] = isset($_POST['admin_exempt']) ? 1 : 0;
         $options['cookie_duration'] = isset($_POST['cookie_duration']) ? max(1, min(365, intval($_POST['cookie_duration']))) : 30;
         $options['stats_retention'] = isset($_POST['stats_retention']) ? max(1, min(365, intval($_POST['stats_retention']))) : 90;
@@ -238,7 +235,7 @@ $custom_template_exists = file_exists(get_stylesheet_directory() . '/wpnav-redir
             <?php printf( esc_html__( 'Version: %s', 'wpnav-links' ), esc_html( WPNAV_LINKS_VERSION ) ); ?>
         </span>
         <a href="https://wpnav.com/document/wpnav-links" target="_blank" class="button button-secondary" style="margin-left: 10px;">
-            <?php esc_html_e( 'Document', 'wpnav-links' ); ?>
+            <?php esc_html_e( 'Documentation', 'wpnav-links' ); ?>
         </a>
         <a href="https://sharecms.com/forums/" target="_blank" class="button button-secondary">
             <?php esc_html_e( 'Support', 'wpnav-links' ); ?>
@@ -338,15 +335,20 @@ $custom_template_exists = file_exists(get_stylesheet_directory() . '/wpnav-redir
                         </tr>
                     </table>
 
-                    <h3><?php esc_html_e('Content Processing', 'wpnav-links'); ?></h3>
+                    <h3><?php esc_html_e('Link Display', 'wpnav-links'); ?></h3>
                     <table class="form-table">
                         <tr>
-                            <th scope="row"><?php esc_html_e('Process Post Content', 'wpnav-links'); ?></th>
+                            <th scope="row"><?php esc_html_e('Show External Icon', 'wpnav-links'); ?></th>
                             <td>
-                                <input type="checkbox" id="intercept_content" name="intercept_content" value="1" <?php checked(!empty($options['intercept_content'])); ?> />
-                                <label for="intercept_content"><?php esc_html_e('Process external links in post and page content', 'wpnav-links'); ?></label>
+                                <input type="checkbox" id="show_external_icon" name="show_external_icon" value="1" <?php checked(!empty($options['show_external_icon'])); ?> />
+                                <label for="show_external_icon"><?php esc_html_e('Show ↗ icon next to external links', 'wpnav-links'); ?></label>
+                                <p class="description"><?php esc_html_e('Display a small arrow icon next to external links to indicate they lead to external websites.', 'wpnav-links'); ?></p>
                             </td>
                         </tr>
+                    </table>
+
+                    <h3><?php esc_html_e('Content Processing', 'wpnav-links'); ?></h3>
+                    <table class="form-table">
                         <tr>
                             <th scope="row"><?php esc_html_e('Process Comments', 'wpnav-links'); ?></th>
                             <td>
@@ -680,7 +682,7 @@ $custom_template_exists = file_exists(get_stylesheet_directory() . '/wpnav-redir
                     <div class="notice notice-info inline">
                         <p>
                             <?php
-                            $wpcy_installed = class_exists('WP_China_Yes'); // Check if WP China Yes plugin is installed
+                            $wpcy_installed = class_exists('WP_China_Yes');
                             $wpcy_link = $wpcy_installed
                                 ? admin_url('admin.php?page=wp-china-yes')
                                 : 'https://wpcy.com';
@@ -977,6 +979,12 @@ $custom_template_exists = file_exists(get_stylesheet_directory() . '/wpnav-redir
     <div class="card">
         <h2><?php esc_html_e('System Information', 'wpnav-links'); ?></h2>
         <table class="wp-list-table widefat fixed">
+          <thead>
+              <tr>
+                  <th><?php _e('Metric', 'wpnav-links'); ?></th>
+                  <th><?php _e('Value', 'wpnav-links'); ?></th>
+              </tr>
+          </thead>
             <tbody>
                 <tr>
                     <th><?php esc_html_e('WordPress Version', 'wpnav-links'); ?></th>

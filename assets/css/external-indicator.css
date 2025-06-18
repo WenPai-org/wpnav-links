@@ -7,21 +7,21 @@ a[data-wpnav-external] .wpnav-external-icon {
     font-size: 0.8em;
     margin-left: 3px;
     opacity: 0.6;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s;
     vertical-align: super;
     line-height: 1;
-    color: #646970;
+    color: rgb(100, 105, 112);
     text-decoration: none;
 }
 
 a[data-wpnav-external]:hover .wpnav-external-icon {
     opacity: 1;
-    color: #1d2327;
+    color: rgb(29, 35, 39);
 }
 
 a[data-wpnav-external]:focus .wpnav-external-icon {
     opacity: 1;
-    color: #2271b1;
+    color: rgb(34, 113, 177);
 }
 
 .wpnav-external-icon-box::after {
@@ -29,7 +29,7 @@ a[data-wpnav-external]:focus .wpnav-external-icon {
     font-size: 0.7em;
     margin-left: 2px;
     opacity: 0.5;
-    color: #646970;
+    color: rgb(100, 105, 112);
 }
 
 .wpnav-external-icon-arrow::after {
@@ -37,12 +37,12 @@ a[data-wpnav-external]:focus .wpnav-external-icon {
     font-size: 0.8em;
     margin-left: 2px;
     opacity: 0.6;
-    color: #646970;
+    color: rgb(100, 105, 112);
 }
 
 .entry-content a[data-wpnav-external] .wpnav-external-icon,
 .comment-content a[data-wpnav-external] .wpnav-external-icon {
-    color: #2271b1;
+    color: rgb(34, 113, 177);
     opacity: 0.7;
 }
 
@@ -52,13 +52,13 @@ a[data-wpnav-external]:focus .wpnav-external-icon {
 }
 
 .widget a[data-wpnav-external] .wpnav-external-icon {
-    color: #50575e;
+    color: rgb(80, 87, 94);
     opacity: 0.6;
 }
 
 .widget a[data-wpnav-external]:hover .wpnav-external-icon {
     opacity: 1;
-    color: #2271b1;
+    color: rgb(34, 113, 177);
 }
 
 .menu a[data-wpnav-external] .wpnav-external-icon,
@@ -69,13 +69,13 @@ a[data-wpnav-external]:focus .wpnav-external-icon {
 }
 
 .site-footer a[data-wpnav-external] .wpnav-external-icon {
-    color: #8c8f94;
+    color: rgb(140, 143, 148);
     opacity: 0.6;
 }
 
 .site-footer a[data-wpnav-external]:hover .wpnav-external-icon {
     opacity: 1;
-    color: #50575e;
+    color: rgb(80, 87, 94);
 }
 
 .wp-block-button__link[data-wpnav-external] .wpnav-external-icon,
@@ -92,7 +92,7 @@ a[data-wpnav-external]:focus .wpnav-external-icon {
     }
 
     a[data-wpnav-external]:hover .wpnav-external-icon {
-        color: #2271b1;
+        color: rgb(34, 113, 177);
     }
 }
 
@@ -116,7 +116,7 @@ a[data-wpnav-external]:focus .wpnav-external-icon {
 }
 
 a[data-wpnav-external]:focus-visible {
-    outline: 2px solid #2271b1;
+    outline: 2px solid rgb(34, 113, 177);
     outline-offset: 2px;
 }
 

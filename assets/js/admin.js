@@ -164,7 +164,6 @@ jQuery(document).ready(function($) {
         }
     });
 
-    // Enhanced preview functionality
     $('#page_title').on('input', function() {
         $('#preview-page-title').text($(this).val());
     });
@@ -199,7 +198,6 @@ jQuery(document).ready(function($) {
         $('#preview-back-btn').text($(this).val());
     });
 
-    // Show/hide warning message functionality
     $('input[name="show_warning_message"], textarea[name="warning_text"]').on('change input', function() {
         var showWarning = $('input[name="show_warning_message"]').is(':checked');
         var warningText = $('textarea[name="warning_text"]').val().trim();
@@ -223,8 +221,6 @@ jQuery(document).ready(function($) {
             var showUrlFull = $('input[name="show_url_full"]').is(':checked');
             var showSecurityTips = $('input[name="show_security_tips"]').is(':checked');
             var showBackButton = $('input[name="show_back_button"]').is(':checked');
-
-            console.log('Updating preview - Template:', template, 'Color:', colorScheme);
 
             var $preview = $('.preview-container');
             $preview.removeClass('wpnav-color-blue wpnav-color-green wpnav-color-red');
@@ -279,7 +275,7 @@ jQuery(document).ready(function($) {
                     $header.find('.wpnav-title').css('font-size', '36px');
                     break;
 
-                default: // default
+                default:
                     $container.css({
                         'max-width': '780px',
                         'padding': '40px',

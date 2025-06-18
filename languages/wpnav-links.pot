@@ -1,389 +1,1068 @@
 # Copyright (C) 2024 WPNav Links
 # This file is distributed under the same license as the WPNav Links package.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: WPNav Links 2.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpnav-links\n"
-"POT-Creation-Date: 2024-01-01 12:00+0000\n"
+"POT-Creation-Date: 2025-06-18 04:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"\n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Loco https://localise.biz/"
 
-#: wpnav-links.php:100
-msgid "External Links Monitor"
+#: admin/admin-page.php:799
+#, php-format
+msgid "%s clicks"
 msgstr ""
 
-#: wpnav-links.php:150
+#: includes/class-public.php:46 includes/class-public.php:238
+msgid "(opens in a new window)"
+msgstr ""
+
+#: includes/class-admin.php:69
+msgid "A draft was found for this field. Would you like to restore it?"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"A simplified WordPress external link redirect tool with customizable "
+"redirect pages and basic security features."
+msgstr ""
+
+#: admin/admin-page.php:785
+msgid "Access Statistics"
+msgstr ""
+
+#: wpnav-links.php:182
 msgid "Active"
 msgstr ""
 
-#: wpnav-links.php:150
-msgid "Inactive"
+#: admin/admin-page.php:811
+msgid "Activity Overview"
 msgstr ""
 
-#: wpnav-links.php:153
-msgid "Manual Only"
+#: admin/admin-page.php:417
+msgid "Add Common"
 msgstr ""
 
-#: wpnav-links.php:159
-msgid "Total Redirects"
+#: admin/admin-page.php:607
+msgid "Add custom CSS to further customize the redirect page appearance"
 msgstr ""
 
-#: wpnav-links.php:164
-msgid "Today"
+#: admin/admin-page.php:876
+msgid "Add domains to whitelist that should not redirect"
 msgstr ""
 
-#: wpnav-links.php:172
-msgid "Last 7 Days"
+#: includes/class-admin.php:60
+#, php-format
+msgid "Added %s to whitelist."
 msgstr ""
 
-#: wpnav-links.php:177
-msgid "Whitelisted"
+#: includes/class-admin.php:61
+msgid "Added common domains to whitelist."
 msgstr ""
 
-#: wpnav-links.php:184
-msgid "Top Domains This Week"
-msgstr ""
-
-#: wpnav-links.php:199
-msgid "No external link activity yet."
-msgstr ""
-
-#: wpnav-links.php:201
-msgid "Enable the plugin to start tracking external links."
-msgstr ""
-
-#: wpnav-links.php:208
-msgid "Enable Plugin"
-msgstr ""
-
-#: wpnav-links.php:210
-msgid "View Details"
-msgstr ""
-
-#: wpnav-links.php:213
-msgid "Manage Whitelist"
-msgstr ""
-
-#: wpnav-links.php:322
-msgid "Settings"
-msgstr ""
-
-#: wpnav-links.php:323
-msgid "Support"
-msgstr ""
-
-#: wpnav-links.php:324
-msgid "Documentation"
-msgstr ""
-
-#: class-wpnav-links.php:50
-msgid "External Links"
-msgstr ""
-
-#: class-wpnav-links.php:80
-msgid "Invalid or missing URL parameter"
-msgstr ""
-
-#: class-wpnav-links.php:85
-msgid "Invalid URL format"
-msgstr ""
-
-#: class-wpnav-links.php:169
-msgid "Redirect Error: "
-msgstr ""
-
-#: class-wpnav-links.php:170
-msgid "External Link Redirect Error"
-msgstr ""
-
-#: class-admin.php:20
-msgid "External Links Redirect"
-msgstr ""
-
-#: class-admin.php:21
-msgid "External Links"
-msgstr ""
-
-#: class-admin.php:49
-msgid "Security check failed"
-msgstr ""
-
-#: class-admin.php:53
-msgid "Insufficient permissions"
-msgstr ""
-
-#: class-admin.php:60
-msgid "Target URL"
-msgstr ""
-
-#: class-admin.php:61
-msgid "Source Page"
-msgstr ""
-
-#: class-admin.php:62
-msgid "Click Time"
-msgstr ""
-
-#: class-admin.php:63
-msgid "IP Address"
-msgstr ""
-
-#: class-admin.php:64
-msgid "User Agent"
-msgstr ""
-
-#: admin-page.php:25
-msgid "You do not have sufficient permissions to access this page."
-msgstr ""
-
-#: admin-page.php:47
-msgid "Basic settings saved successfully!"
-msgstr ""
-
-#: admin-page.php:49
-msgid "Failed to save basic settings. Database error."
-msgstr ""
-
-#: admin-page.php:67
-msgid "Whitelist settings saved successfully!"
-msgstr ""
-
-#: admin-page.php:69
-msgid "Failed to save whitelist settings. Database error."
-msgstr ""
-
-#: admin-page.php:99
-msgid "Redirect page settings saved successfully!"
-msgstr ""
-
-#: admin-page.php:101
-msgid "Failed to save redirect page settings. Database error."
-msgstr ""
-
-#: admin-page.php:127
-msgid "Successfully imported %d domains."
-msgstr ""
-
-#: admin-page.php:129
-msgid "Failed to import CSV data. Database error."
-msgstr ""
-
-#: admin-page.php:132
-msgid "No valid domains found in the CSV file."
-msgstr ""
-
-#: admin-page.php:135
-msgid "Please select a CSV file to upload."
-msgstr ""
-
-#: admin-page.php:145
-msgid "Settings saved successfully!"
-msgstr ""
-
-#: admin-page.php:183
-msgid "Custom Template Detected:"
-msgstr ""
-
-#: admin-page.php:183
-msgid "Your theme has a custom redirect template. Settings below may not apply if your custom template doesn't support them."
-msgstr ""
-
-#: admin-page.php:187
-msgid "Basic Settings"
-msgstr ""
-
-#: admin-page.php:190
-msgid "Redirect Page"
-msgstr ""
-
-#: admin-page.php:193
-msgid "Whitelist"
-msgstr ""
-
-#: admin-page.php:196
-msgid "Statistics"
-msgstr ""
-
-#: admin-page.php:199
-msgid "Import/Export"
-msgstr ""
-
-#: admin-page.php:208
-msgid "Enable Redirect"
-msgstr ""
-
-#: admin-page.php:211
-msgid "Enable external link redirect functionality"
-msgstr ""
-
-#: admin-page.php:215
-msgid "Auto Redirect"
-msgstr ""
-
-#: admin-page.php:218
-msgid "Enable automatic redirect"
-msgstr ""
-
-#: admin-page.php:219
-msgid "When enabled, users will be automatically redirected after the specified delay."
-msgstr ""
-
-#: admin-page.php:223
-msgid "Redirect Delay"
-msgstr ""
-
-#: admin-page.php:226
-msgid "Seconds to wait before automatic redirect (1-30 seconds)."
-msgstr ""
-
-#: admin-page.php:230
-msgid "Open in New Tab"
-msgstr ""
-
-#: admin-page.php:233
-msgid "Open external links in new tab/window"
-msgstr ""
-
-#: admin-page.php:237
-msgid "URL Format"
-msgstr ""
-
-#: admin-page.php:241
-msgid "Query Format (?url=encoded_url)"
-msgstr ""
-
-#: admin-page.php:245
-msgid "Path Format (/go/encoded_url)"
-msgstr ""
-
-#: admin-page.php:249
-msgid "Target Format (?target=encoded_url)"
-msgstr ""
-
-#: admin-page.php:252
-msgid "Choose URL format style for external link redirects."
-msgstr ""
-
-#: admin-page.php:257
-msgid "Content Processing"
-msgstr ""
-
-#: admin-page.php:260
-msgid "Process Post Content"
-msgstr ""
-
-#: admin-page.php:263
-msgid "Process external links in post and page content"
-msgstr ""
-
-#: redirect-template.php:25
-msgid "External Link Warning"
-msgstr ""
-
-#: redirect-template.php:27
-msgid "You are about to visit:"
-msgstr ""
-
-#: redirect-template.php:28
-msgid "You are about to leave this site and visit an external website. We are not responsible for the content of external websites."
-msgstr ""
-
-#: redirect-template.php:32
-msgid "Continue"
-msgstr ""
-
-#: redirect-template.php:33
-msgid "Back"
-msgstr ""
-
-#: redirect-template.php:35
-msgid "Auto redirect in {seconds} seconds"
-msgstr ""
-
-#: redirect-template.php:55
-msgid "External Link Redirect - %s"
-msgstr ""
-
-#: redirect-template.php:146
-msgid "Don't show this again"
-msgstr ""
-
-#: redirect-template.php:213
-msgid "Destination Information"
-msgstr ""
-
-#: redirect-template.php:230
-msgid "Copy"
-msgstr ""
-
-#: redirect-template.php:238
-msgid "Security Status"
-msgstr ""
-
-#: redirect-template.php:244
-msgid "This website does not use HTTPS encryption. Your data may not be secure."
-msgstr ""
-
-#: redirect-template.php:252
-msgid "Security Tips"
-msgstr ""
-
-#: redirect-template.php:255
-msgid "Verify the link is from a trusted source"
-msgstr ""
-
-#: redirect-template.php:256
-msgid "Avoid entering personal information on HTTP sites"
-msgstr ""
-
-#: redirect-template.php:257
-msgid "Be cautious of download requests"
-msgstr ""
-
-#: redirect-template.php:258
-msgid "Check for secure HTTPS connection"
-msgstr ""
-
-#: redirect-template.php:263
+#: templates/redirect-template.php:240
 msgid "Additional Caution Required"
 msgstr ""
 
-#: redirect-template.php:265
-msgid "This link does not use secure HTTPS"
+#: admin/admin-page.php:378
+msgid "Admin Exempt"
 msgstr ""
 
-#: redirect-template.php:266
+#: admin/admin-page.php:894
+msgid "Apply Filter"
+msgstr ""
+
+#: includes/class-admin.php:63
+msgid "Are you sure you want to clear all domains from the whitelist?"
+msgstr ""
+
+#: admin/admin-page.php:295
+msgid "Auto Redirect"
+msgstr ""
+
+#: templates/redirect-template.php:43
+msgid "Auto redirect in {seconds} seconds"
+msgstr ""
+
+#: admin/admin-page.php:439
+msgid "Auto Whitelist Rules"
+msgstr ""
+
+#: templates/redirect-template.php:232
+msgid "Avoid entering personal information on HTTP sites"
+msgstr ""
+
+#: templates/redirect-template.php:41
+msgid "Back"
+msgstr ""
+
+#: admin/admin-page.php:574
+msgid "Back Button Text:"
+msgstr ""
+
+#: admin/admin-page.php:429
+msgid "Baidu"
+msgstr ""
+
+#: admin/admin-page.php:492
+msgid "Balanced information display"
+msgstr ""
+
+#: admin/admin-page.php:265 admin/admin-page.php:282
+msgid "Basic Settings"
+msgstr ""
+
+#: admin/admin-page.php:61 admin/admin-page.php:66
+msgid "Basic settings saved successfully!"
+msgstr ""
+
+#: templates/redirect-template.php:233 templates/redirect-template.php:346
+msgid "Be cautious of download requests"
+msgstr ""
+
+#: admin/admin-page.php:430
+msgid "Bing"
+msgstr ""
+
+#: admin/admin-page.php:505
+msgid "Blue - Professional"
+msgstr ""
+
+#: admin/admin-page.php:567
+msgid "Button Settings"
+msgstr ""
+
+#: admin/admin-page.php:578
+msgid "Button Style:"
+msgstr ""
+
+#: admin/admin-page.php:656 templates/redirect-template.php:234
+#: templates/redirect-template.php:345
+msgid "Check for secure HTTPS connection"
+msgstr ""
+
+#: admin/admin-page.php:333
+msgid "Choose URL format style for external link redirects."
+msgstr ""
+
+#: admin/admin-page.php:488
+msgid "Clean and lightweight design"
+msgstr ""
+
+#: admin/admin-page.php:418
+msgid "Clear All"
+msgstr ""
+
+#: includes/class-admin.php:107
+msgid "Click Time"
+msgstr ""
+
+#: admin/admin-page.php:426
+msgid "Click to add common domains to your whitelist:"
+msgstr ""
+
+#: admin/admin-page.php:502
+msgid "Color Scheme"
+msgstr ""
+
+#: admin/admin-page.php:496
+msgid "Comprehensive with security info"
+msgstr ""
+
+#: admin/admin-page.php:874
+msgid "Configure which content areas to process"
+msgstr ""
+
+#: templates/redirect-template.php:243
 msgid "Consider if this site is trustworthy before proceeding"
 msgstr ""
 
-#: redirect-template.php:295
-msgid "Don't show this warning for %d days"
+#: admin/admin-page.php:350
+msgid "Content Processing"
 msgstr ""
 
-#: redirect-template.php:342
-msgid "Protected by %s"
+#: templates/redirect-template.php:40
+msgid "Continue"
 msgstr ""
 
-#: redirect-template.php:385
+#: admin/admin-page.php:570
+msgid "Continue Button Text:"
+msgstr ""
+
+#: admin/admin-page.php:385
+msgid "Cookie Duration"
+msgstr ""
+
+#: templates/redirect-template.php:204
+msgid "Copy"
+msgstr ""
+
+#: admin/admin-page.php:588
+msgid "Countdown Settings"
+msgstr ""
+
+#: admin/admin-page.php:591
+msgid "Countdown Text:"
+msgstr ""
+
+#: admin/admin-page.php:712
+msgid "CSV File"
+msgstr ""
+
+#: admin/admin-page.php:753
+msgid "CSV Format Guide"
+msgstr ""
+
+#: admin/admin-page.php:604
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/admin-page.php:1010
+msgid "Custom Template"
+msgstr ""
+
+#: admin/admin-page.php:259
+msgid "Custom Template Detected:"
+msgstr ""
+
+#: admin/admin-page.php:875
+msgid "Customize redirect page appearance"
+msgstr ""
+
+#: admin/admin-page.php:472
+msgid ""
+"Customize the appearance and content of the redirect warning page shown to "
+"users."
+msgstr ""
+
+#: admin/admin-page.php:842
+msgid "Daily Avg"
+msgstr ""
+
+#: admin/admin-page.php:1002
+msgid "Database Table"
+msgstr ""
+
+#: admin/admin-page.php:889
+msgid "Date Range"
+msgstr ""
+
+#: admin/admin-page.php:388
+msgid "Days to remember user's \"Do not show again\" preference."
+msgstr ""
+
+#: admin/admin-page.php:395
+msgid "Days to retain statistics data before automatic cleanup."
+msgstr ""
+
+#: admin/admin-page.php:492 admin/admin-page.php:999
+msgid "Default"
+msgstr ""
+
+#: templates/redirect-template.php:189
+msgid "Destination Information"
+msgstr ""
+
+#: admin/admin-page.php:345
+msgid ""
+"Display a small arrow icon next to external links to indicate they lead to "
+"external websites."
+msgstr ""
+
+#: admin/admin-page.php:529
+msgid "Display Options"
+msgstr ""
+
+#: wpnav-links.php:486 admin/admin-page.php:238
+msgid "Documentation"
+msgstr ""
+
+#: admin/admin-page.php:759
+msgid "Domain"
+msgstr ""
+
+#: includes/class-admin.php:59
+#, php-format
+msgid "Domain %s is already in the whitelist."
+msgstr ""
+
+#: admin/admin-page.php:415
+msgid "Domain List"
+msgstr ""
+
+#: admin/admin-page.php:407
+msgid "Domain Whitelist Management"
+msgstr ""
+
+#: admin/admin-page.php:776
+msgid "Domain:"
+msgstr ""
+
+#: templates/redirect-template.php:150
+msgid "Don't show this again"
+msgstr ""
+
+#: templates/redirect-template.php:366
 msgid "Don't show this again (%d days)"
 msgstr ""
 
-#: redirect-template.php:461
-msgid "Link copied to clipboard"
+#: templates/redirect-template.php:274
+msgid "Don't show this warning for %d days"
 msgstr ""
 
-#: redirect-template.php:536
-msgid "External link (opens in a new window)"
+#: admin/admin-page.php:728
+msgid "Download current whitelist domains as CSV file."
 msgstr ""
 
-#: class-public.php:69
+#: admin/admin-page.php:736
+msgid "Download statistics data for the selected date range."
+msgstr ""
+
+#: includes/class-admin.php:68
+msgid "Draft saved"
+msgstr ""
+
+#: admin/admin-page.php:779
+msgid "Duplicate domains will be automatically removed"
+msgstr ""
+
+#: admin/admin-page.php:778
+msgid "Empty lines will be ignored during import"
+msgstr ""
+
+#: admin/admin-page.php:298
+msgid "Enable automatic redirect"
+msgstr ""
+
+#: admin/admin-page.php:291
+msgid "Enable external link redirect functionality"
+msgstr ""
+
+#: wpnav-links.php:248
+msgid "Enable Plugin"
+msgstr ""
+
+#: admin/admin-page.php:288
+msgid "Enable Redirect"
+msgstr ""
+
+#: admin/admin-page.php:873
+msgid "Enable redirect functionality in basic settings"
+msgstr ""
+
+#: wpnav-links.php:239
+msgid "Enable the plugin to start tracking external links."
+msgstr ""
+
+#: admin/admin-page.php:743
+msgid "End Date:"
+msgstr ""
+
+#: admin/admin-page.php:422
+msgid ""
+"Enter domains that should not redirect, one per line. Example: google.com "
+"(do not include http:// or https://)"
+msgstr ""
+
+#: admin/admin-page.php:367
+msgid "Exclude CSS Class"
+msgstr ""
+
+#: includes/class-admin.php:66
+msgid "Export not supported in this browser."
+msgstr ""
+
+#: admin/admin-page.php:735 admin/admin-page.php:747
+msgid "Export Statistics"
+msgstr ""
+
+#: admin/admin-page.php:727 admin/admin-page.php:730
+msgid "Export Whitelist"
+msgstr ""
+
+#: includes/class-public.php:45
 msgid "External link"
 msgstr ""
 
-#: class-public.php:70
-msgid "(opens in a new window)"
+#: includes/class-public.php:121 includes/class-public.php:239
+msgid "External link (opens in a new window)"
+msgstr ""
+
+#: templates/redirect-template.php:60
+#, php-format
+msgid "External Link Redirect - %s"
+msgstr ""
+
+#: includes/class-wpnav-links.php:148
+msgid "External Link Redirect Error"
+msgstr ""
+
+#: templates/redirect-template.php:27
+msgid "External Link Warning"
+msgstr ""
+
+#: includes/class-admin.php:25 includes/class-wpnav-links.php:279
+msgid "External Links"
+msgstr ""
+
+#: wpnav-links.php:142
+msgid "External Links Monitor"
+msgstr ""
+
+#: includes/class-admin.php:24
+msgid "External Links Redirect"
+msgstr ""
+
+#: admin/admin-page.php:432
+msgid "Facebook"
+msgstr ""
+
+#: admin/admin-page.php:181
+msgid "Failed to import CSV data. Database error."
+msgstr ""
+
+#: admin/admin-page.php:63
+msgid "Failed to save basic settings. Database error."
+msgstr ""
+
+#: admin/admin-page.php:138
+msgid "Failed to save redirect page settings. Database error."
+msgstr ""
+
+#: admin/admin-page.php:94
+msgid "Failed to save whitelist settings. Database error."
+msgstr ""
+
+#: admin/admin-page.php:496
+msgid "Full"
+msgstr ""
+
+#: admin/admin-page.php:428
+msgid "Google"
+msgstr ""
+
+#: admin/admin-page.php:506
+msgid "Green - Safe"
+msgstr ""
+
+#: admin/admin-page.php:855 admin/admin-page.php:864
+msgid "HTTP Links"
+msgstr ""
+
+#: admin/admin-page.php:851 admin/admin-page.php:860
+msgid "HTTPS Links"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpnav.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wpnav.com/plugins/wpnav-links"
+msgstr ""
+
+#: admin/admin-page.php:721
+msgid "Import CSV"
+msgstr ""
+
+#: admin/admin-page.php:151
+msgid "Import functionality requires 文派叶子 🍃（WPCY.COM）to be active."
+msgstr ""
+
+#: admin/admin-page.php:704
+msgid "Import Whitelist"
+msgstr ""
+
+#: admin/admin-page.php:277
+msgid "Import/Export"
+msgstr ""
+
+#: wpnav-links.php:182
+msgid "Inactive"
+msgstr ""
+
+#: admin/admin-page.php:435
+msgid "Instagram"
+msgstr ""
+
+#: admin/admin-page.php:691
+#, php-format
+msgid ""
+"Install the %s high-performance component to use batch whitelist "
+"import/export functionality."
+msgstr ""
+
+#: includes/class-admin.php:93
+msgid "Insufficient permissions"
+msgstr ""
+
+#: includes/class-wpnav-links.php:66
+msgid "Invalid or missing URL parameter"
+msgstr ""
+
+#: includes/class-wpnav-links.php:71
+msgid "Invalid URL format"
+msgstr ""
+
+#: admin/admin-page.php:907 includes/class-admin.php:108
+msgid "IP Address"
+msgstr ""
+
+#: wpnav-links.php:209
+msgid "Last 7 Days"
+msgstr ""
+
+#: templates/redirect-template.php:442 templates/redirect-template.php:451
+msgid "Link copied to clipboard"
+msgstr ""
+
+#: admin/admin-page.php:338
+msgid "Link Display"
+msgstr ""
+
+#: admin/admin-page.php:434
+msgid "LinkedIn"
+msgstr ""
+
+#: admin/admin-page.php:370
+msgid "Links with this CSS class will not be redirected."
+msgstr ""
+
+#: admin/admin-page.php:617
+msgid "Live Preview"
+msgstr ""
+
+#: admin/admin-page.php:563
+msgid ""
+"Main warning message displayed to users. Leave empty to hide the warning box."
+msgstr ""
+
+#: admin/admin-page.php:457
+msgid "Major search engines (Google, Baidu, Bing, etc.) won't redirect"
+msgstr ""
+
+#: admin/admin-page.php:409
+msgid ""
+"Manage domains that should not be redirected through the external link page."
+msgstr ""
+
+#: wpnav-links.php:253
+msgid "Manage Whitelist"
+msgstr ""
+
+#: wpnav-links.php:185
+msgid "Manual Only"
+msgstr ""
+
+#: admin/admin-page.php:984
+msgid "Metric"
+msgstr ""
+
+#: admin/admin-page.php:488
+msgid "Minimal"
+msgstr ""
+
+#: admin/admin-page.php:927
+msgid "N/A"
+msgstr ""
+
+#: admin/admin-page.php:1011
+msgid "No - Using default template"
+msgstr ""
+
+#: admin/admin-page.php:806
+msgid ""
+"No data available yet. Top links will appear here after users start clicking "
+"external links."
+msgstr ""
+
+#: wpnav-links.php:237
+msgid "No external link activity yet."
+msgstr ""
+
+#: admin/admin-page.php:970
+msgid "No redirect records found for the selected date range."
+msgstr ""
+
+#: admin/admin-page.php:184
+msgid "No valid domains found in the CSV file."
+msgstr ""
+
+#: admin/admin-page.php:777
+msgid "One domain per line in the CSV file"
+msgstr ""
+
+#: admin/admin-page.php:313
+msgid "Open external links in new tab/window"
+msgstr ""
+
+#: admin/admin-page.php:310
+msgid "Open in New Tab"
+msgstr ""
+
+#: includes/class-public.php:236
+msgid "opens in a new window"
+msgstr ""
+
+#: admin/admin-page.php:958
+#, php-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: admin/admin-page.php:512
+msgid "Page Content"
+msgstr ""
+
+#: admin/admin-page.php:519
+msgid "Page Subtitle (optional):"
+msgstr ""
+
+#: admin/admin-page.php:515
+msgid "Page Title:"
+msgstr ""
+
+#: admin/admin-page.php:838
+msgid "Pages"
+msgstr ""
+
+#: admin/admin-page.php:326
+msgid "Path Format (/go/encoded_url)"
+msgstr ""
+
+#: admin/admin-page.php:998
+msgid "Permalink Structure"
+msgstr ""
+
+#: admin/admin-page.php:994
+msgid "PHP Version"
+msgstr ""
+
+#: admin/admin-page.php:582
+msgid "Pill Shape"
+msgstr ""
+
+#: admin/admin-page.php:187
+msgid "Please select a CSV file to upload."
+msgstr ""
+
+#: admin/admin-page.php:1006
+msgid "Plugin URL"
+msgstr ""
+
+#: admin/admin-page.php:353
+msgid "Process Comments"
+msgstr ""
+
+#: admin/admin-page.php:356
+msgid "Process external links in comments"
+msgstr ""
+
+#: admin/admin-page.php:363
+msgid "Process external links in widgets"
+msgstr ""
+
+#: admin/admin-page.php:360
+msgid "Process Widgets"
+msgstr ""
+
+#: templates/redirect-template.php:299
+#, php-format
+msgid "Protected by %s"
+msgstr ""
+
+#: admin/admin-page.php:322
+msgid "Query Format (?url=encoded_url)"
+msgstr ""
+
+#: admin/admin-page.php:971
+msgid ""
+"Records will appear here after users click on external links processed by "
+"the plugin."
+msgstr ""
+
+#: admin/admin-page.php:507
+msgid "Red - Warning"
+msgstr ""
+
+#: admin/admin-page.php:303
+msgid "Redirect Delay"
+msgstr ""
+
+#: includes/class-wpnav-links.php:147
+msgid "Redirect Error: "
+msgstr ""
+
+#: admin/admin-page.php:268
+msgid "Redirect Page"
+msgstr ""
+
+#: admin/admin-page.php:471
+msgid "Redirect Page Design"
+msgstr ""
+
+#: admin/admin-page.php:136 admin/admin-page.php:141
+msgid "Redirect page settings saved successfully!"
+msgstr ""
+
+#: admin/admin-page.php:895
+msgid "Reset"
+msgstr ""
+
+#: admin/admin-page.php:580
+msgid "Rounded"
+msgstr ""
+
+#: admin/admin-page.php:446
+msgid "Same root domain no redirect"
+msgstr ""
+
+#: admin/admin-page.php:613
+msgid "Save Redirect Page Settings"
+msgstr ""
+
+#: admin/admin-page.php:401
+msgid "Save Settings"
+msgstr ""
+
+#: admin/admin-page.php:465
+msgid "Save Whitelist"
+msgstr ""
+
+#: includes/class-admin.php:67
+msgid "Saving..."
+msgstr ""
+
+#: admin/admin-page.php:455
+msgid "Search engines no redirect"
+msgstr ""
+
+#: admin/admin-page.php:306
+msgid "Seconds to wait before automatic redirect (1-30 seconds)."
+msgstr ""
+
+#: admin/admin-page.php:908
+msgid "Security"
+msgstr ""
+
+#: includes/class-admin.php:89
+msgid "Security check failed"
+msgstr ""
+
+#: templates/redirect-template.php:212
+msgid "Security Status"
+msgstr ""
+
+#: admin/admin-page.php:653 templates/redirect-template.php:228
+#: templates/redirect-template.php:342
+msgid "Security Tips"
+msgstr ""
+
+#: admin/admin-page.php:715
+msgid "Select a CSV file containing domain names (one per line)"
+msgstr ""
+
+#: includes/class-admin.php:78
+msgid "Settings"
+msgstr ""
+
+#: admin/admin-page.php:196 includes/class-admin.php:70
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: admin/admin-page.php:554
+msgid "Show back button"
+msgstr ""
+
+#: admin/admin-page.php:341
+msgid "Show External Icon"
+msgstr ""
+
+#: admin/admin-page.php:542
+msgid "Show full URL below domain"
+msgstr ""
+
+#: admin/admin-page.php:546
+msgid "Show HTTPS security status"
+msgstr ""
+
+#: admin/admin-page.php:598
+msgid "Show progress bar during countdown"
+msgstr ""
+
+#: admin/admin-page.php:550
+msgid "Show security tips and warnings"
+msgstr ""
+
+#: admin/admin-page.php:538
+msgid "Show site logo"
+msgstr ""
+
+#: admin/admin-page.php:534
+msgid "Show warning message"
+msgstr ""
+
+#: admin/admin-page.php:344
+msgid "Show ↗ icon next to external links"
+msgstr ""
+
+#: admin/admin-page.php:484
+msgid "Simple"
+msgstr ""
+
+#: admin/admin-page.php:381
+msgid "Skip redirect page for admin users"
+msgstr ""
+
+#: admin/admin-page.php:905 includes/class-admin.php:106
+msgid "Source Page"
+msgstr ""
+
+#: admin/admin-page.php:581
+msgid "Square"
+msgstr ""
+
+#: admin/admin-page.php:742
+msgid "Start Date:"
+msgstr ""
+
+#: admin/admin-page.php:274
+msgid "Statistics"
+msgstr ""
+
+#: admin/admin-page.php:392
+msgid "Stats Retention"
+msgstr ""
+
+#: admin/admin-page.php:448
+msgid ""
+"Subdomains of your site won't redirect (e.g., blog.example.com and shop."
+"example.com)"
+msgstr ""
+
+#: admin/admin-page.php:179 admin/admin-page.php:199
+#: includes/class-admin.php:71
+msgid "Successfully imported %d domains."
+msgstr ""
+
+#: wpnav-links.php:485 admin/admin-page.php:241
+msgid "Support"
+msgstr ""
+
+#: admin/admin-page.php:980
+msgid "System Information"
+msgstr ""
+
+#: admin/admin-page.php:330
+msgid "Target Format (?target=encoded_url)"
+msgstr ""
+
+#: admin/admin-page.php:904 includes/class-admin.php:105
+msgid "Target URL"
+msgstr ""
+
+#: admin/admin-page.php:479
+msgid "Template Style"
+msgstr ""
+
+#: admin/admin-page.php:754
+msgid "The CSV file for whitelist import should follow this format:"
+msgstr ""
+
+#: admin/admin-page.php:776
+msgid "The domain name without http:// or https:// (required)"
+msgstr ""
+
+#: templates/redirect-template.php:242
+msgid "This link does not use secure HTTPS"
+msgstr ""
+
+#: admin/admin-page.php:830
+msgid "This Month"
+msgstr ""
+
+#: templates/redirect-template.php:219
+msgid ""
+"This website does not use HTTPS encryption. Your data may not be secure."
+msgstr ""
+
+#: admin/admin-page.php:906
+msgid "Time"
+msgstr ""
+
+#: admin/admin-page.php:892
+msgid "to"
+msgstr ""
+
+#: wpnav-links.php:198 admin/admin-page.php:826
+msgid "Today"
+msgstr ""
+
+#: wpnav-links.php:221
+msgid "Top Domains This Week"
+msgstr ""
+
+#: admin/admin-page.php:790 admin/admin-page.php:805
+msgid "Top External Links"
+msgstr ""
+
+#: admin/admin-page.php:834
+msgid "Total Records"
+msgstr ""
+
+#: wpnav-links.php:193
+msgid "Total Redirects"
+msgstr ""
+
+#: admin/admin-page.php:433
+msgid "Twitter"
+msgstr ""
+
+#: admin/admin-page.php:484
+msgid "Ultra-minimal design with just essentials"
+msgstr ""
+
+#: admin/admin-page.php:846
+msgid "Unique Domains"
+msgstr ""
+
+#: admin/admin-page.php:705
+msgid "Upload CSV file to bulk import domains to your whitelist."
+msgstr ""
+
+#: admin/admin-page.php:317
+msgid "URL Format"
+msgstr ""
+
+#: admin/admin-page.php:523
+msgid "URL Label:"
+msgstr ""
+
+#: admin/admin-page.php:871
+msgid "Usage Guide"
+msgstr ""
+
+#: admin/admin-page.php:593
+msgid "Use {seconds} as placeholder for countdown number"
+msgstr ""
+
+#: includes/class-admin.php:109
+msgid "User Agent"
+msgstr ""
+
+#: admin/admin-page.php:375
+msgid "User Experience"
+msgstr ""
+
+#: admin/admin-page.php:985
+msgid "Value"
+msgstr ""
+
+#: admin/admin-page.php:655 templates/redirect-template.php:231
+#: templates/redirect-template.php:344
+msgid "Verify the link is from a trusted source"
+msgstr ""
+
+#: admin/admin-page.php:235
+#, php-format
+msgid "Version: %s"
+msgstr ""
+
+#: admin/admin-page.php:877
+msgid "View access data in statistics tab"
+msgstr ""
+
+#: wpnav-links.php:250
+msgid "View Details"
+msgstr ""
+
+#: admin/admin-page.php:786
+msgid "View external link access statistics and logs."
+msgstr ""
+
+#: admin/admin-page.php:560
+msgid "Warning Message"
+msgstr ""
+
+#: admin/admin-page.php:299
+msgid ""
+"When enabled, users will be automatically redirected after the specified "
+"delay."
+msgstr ""
+
+#: admin/admin-page.php:271
+msgid "Whitelist"
+msgstr ""
+
+#: includes/class-admin.php:62
+msgid "Whitelist cleared."
+msgstr ""
+
+#: includes/class-admin.php:65
+msgid "Whitelist exported successfully."
+msgstr ""
+
+#: includes/class-admin.php:64
+msgid "Whitelist is empty, cannot export."
+msgstr ""
+
+#: admin/admin-page.php:92 admin/admin-page.php:97
+msgid "Whitelist settings saved successfully!"
+msgstr ""
+
+#: wpnav-links.php:214
+msgid "Whitelisted"
+msgstr ""
+
+#: admin/admin-page.php:990
+msgid "WordPress Version"
+msgstr ""
+
+#. Author of the plugin
+msgid "WPNav"
+msgstr ""
+
+#. Name of the plugin
+msgid "WPNav Links"
+msgstr ""
+
+#: admin/admin-page.php:1011
+msgid "Yes - Custom template detected"
+msgstr ""
+
+#: admin/admin-page.php:562 templates/redirect-template.php:30
+msgid ""
+"You are about to leave this site and visit an external website. We are not "
+"responsible for the content of external websites."
+msgstr ""
+
+#: templates/redirect-template.php:29
+msgid "You are about to visit:"
+msgstr ""
+
+#: admin/admin-page.php:36 admin/admin-page.php:74 admin/admin-page.php:105
+#: admin/admin-page.php:149
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: admin/admin-page.php:259
+msgid ""
+"Your theme has a custom redirect template. Settings below may not apply if "
+"your custom template doesn't support them."
+msgstr ""
+
+#: admin/admin-page.php:431
+msgid "YouTube"
+msgstr ""
+
+#: admin/admin-page.php:695
+msgid "文派叶子 🍃（WPCY.COM）"
 msgstr ""

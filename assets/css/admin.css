@@ -410,18 +410,18 @@
 }
 
 .wpnav-redirect-preview {
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  background: #919191;
-  margin-top: 20px;
-  position: relative;
-  overflow: hidden;
-  background-image: url(../icons/i-like-food.svg);
-  background-position: left top;
-  background-size: auto;
-  background-repeat: repeat;
-  background-attachment: fixed;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #919191;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/preview-bg.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 .wpnav-redirect-preview::before {

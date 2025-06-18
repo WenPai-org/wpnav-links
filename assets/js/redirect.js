@@ -114,12 +114,14 @@
             $link.attr('href', redirectUrl);
             $link.attr('data-wpnav-external', '1');
 
-            this.addExternalIndicator($link);
+            if (wpnav_params.show_external_icon) {
+                this.addExternalIndicator($link);
+            }
         },
 
         addExternalIndicator: function($link) {
             if (!$link.find('.wpnav-external-icon').length) {
-                var iconHtml = '<span class="wpnav-external-icon" style="font-size: 0.8em; margin-left: 3px; opacity: 0.6; vertical-align: super; color: #646970; transition: opacity 0.2s ease;">↗</span>';
+                var iconHtml = '<span class="wpnav-external-icon" style="font-size: 0.8em; margin-left: 3px; opacity: 0.6; vertical-align: super; color: rgb(100, 105, 112); transition: opacity 0.2s;">↗</span>';
                 $link.append(iconHtml);
             }
         },
@@ -245,13 +247,15 @@
                 }
             });
 
-            $(document).on('mouseenter', 'a[data-wpnav-external]', function() {
-                $(this).find('.wpnav-external-icon').css('opacity', '1');
-            });
+            if (wpnav_params.show_external_icon) {
+                $(document).on('mouseenter', 'a[data-wpnav-external]', function() {
+                    $(this).find('.wpnav-external-icon').css('opacity', '1');
+                });
 
-            $(document).on('mouseleave', 'a[data-wpnav-external]', function() {
-                $(this).find('.wpnav-external-icon').css('opacity', '0.6');
-            });
+                $(document).on('mouseleave', 'a[data-wpnav-external]', function() {
+                    $(this).find('.wpnav-external-icon').css('opacity', '0.6');
+                });
+            }
         },
 
         optimizeForMobile: function() {

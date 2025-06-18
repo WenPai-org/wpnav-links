@@ -39,6 +39,7 @@ class WPNAV_Public {
                 'redirect_method' => isset($this->options['url_format']) ? $this->options['url_format'] : 'query',
                 'url_encoding' => 'base64',
                 'permalink_structure' => get_option('permalink_structure') ? true : false,
+                'show_external_icon' => !empty($this->options['show_external_icon']),
                 'whitelist_domains' => $this->get_whitelist_domains(),
                 'strings' => array(
                     'external_link' => __('External link', 'wpnav-links'),
@@ -59,10 +60,6 @@ class WPNAV_Public {
     }
 
     private function setup_content_filters() {
-        if (isset($this->options['intercept_content']) && $this->options['intercept_content']) {
-            add_filter('the_content', array($this, 'process_content'));
-        }
-
         if (isset($this->options['intercept_comments']) && $this->options['intercept_comments']) {
             add_filter('comment_text', array($this, 'process_content'));
         }
@@ -119,7 +116,6 @@ class WPNAV_Public {
                 if ($this->options['open_in_new_tab']) {
                     $link->setAttribute('target', '_blank');
 
-                    // Add screen reader text for accessibility
                     $title = $link->getAttribute('title');
                     if (empty($title)) {
                         $link->setAttribute('title', __('External link (opens in a new window)', 'wpnav-links'));
@@ -236,7 +232,6 @@ class WPNAV_Public {
                         if (wpnav_params.open_new_tab) {
                             $link.attr('target', '_blank');
 
-                            // Add accessibility attributes
                             var currentTitle = $link.attr('title') || '';
                             if (!currentTitle.includes('<?php echo esc_js(__('opens in a new window', 'wpnav-links')); ?>')) {
                                 var newTitle = currentTitle ?
@@ -248,8 +243,19 @@ class WPNAV_Public {
 
                         $link.attr('href', getRedirectUrl(href));
                         $link.attr('data-wpnav-external', '1');
+
+                        if (wpnav_params.show_external_icon) {
+                            addExternalIcon($link);
+                        }
                     }
                 });
+            }
+
+            function addExternalIcon($link) {
+                if (!$link.find('.wpnav-external-icon').length) {
+                    var iconHtml = '<span class="wpnav-external-icon" style="font-size: 0.8em; margin-left: 3px; opacity: 0.6; vertical-align: super; color: rgb(100, 105, 112); transition: opacity 0.2s;">↗</span>';
+                    $link.append(iconHtml);
+                }
             }
 
             function isExternalLink(url) {
@@ -315,6 +321,16 @@ class WPNAV_Public {
             $(document).ready(function() {
                 processExternalLinks($('a:not([data-wpnav-external])'));
                 processAjaxContent();
+
+                if (wpnav_params.show_external_icon) {
+                    $(document).on('mouseenter', 'a[data-wpnav-external]', function() {
+                        $(this).find('.wpnav-external-icon').css('opacity', '1');
+                    });
+
+                    $(document).on('mouseleave', 'a[data-wpnav-external]', function() {
+                        $(this).find('.wpnav-external-icon').css('opacity', '0.6');
+                    });
+                }
             });
         })(jQuery);
         </script>

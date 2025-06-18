@@ -3,9 +3,9 @@
  * Plugin Name: WPNav Links
  * Plugin URI: https://wpnav.com/plugins/wpnav-links
  * Description: A simplified WordPress external link redirect tool with customizable redirect pages and basic security features.
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: WPNav
- * Author URI: https://wpnaw.com
+ * Author URI: https://wpnav.com
  * Text Domain: wpnav-links
  * Domain Path: /languages
  * License: GPL v2 or later
@@ -19,10 +19,10 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('WPNAV_LINKS_VERSION', '1.2.0');
+define('WPNAV_LINKS_VERSION', '1.2.1');
 define('WPNAV_LINKS_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('WPNAV_LINKS_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('WPNAV_LINKS_DB_VERSION', '1.2.0');
+define('WPNAV_LINKS_DB_VERSION', '1.2.1');
 define('WPNAV_LINKS_TABLE', 'nav_link_redirects');
 
 require_once WPNAV_LINKS_PLUGIN_DIR . 'includes/class-wpnav-links.php';
@@ -44,10 +44,10 @@ function wpnav_activate_plugin() {
             'search_engines' => true
         ),
         'whitelist_domains' => "google.com\nbaidu.com\nbing.com\nyoutube.com\nfacebook.com\ntwitter.com",
-        'intercept_content' => true,
         'intercept_comments' => true,
         'intercept_widgets' => true,
         'exclude_css_class' => 'no-redirect',
+        'show_external_icon' => true,
         'template' => 'default',
         'color_scheme' => 'blue',
         'page_title' => 'External Link Warning',
@@ -483,7 +483,7 @@ function wpnav_plugin_row_meta($links, $file) {
     if (plugin_basename(__FILE__) === $file) {
         $row_meta = array(
             'support' => '<a href="https://sharecms.com/forums" target="_blank">' . esc_html__('Support', 'wpnav-links') . '</a>',
-            'document' => '<a href="https://wpnav.com/document/wpnav-links" target="_blank">' . esc_html__('Document', 'wpnav-links') . '</a>',
+            'document' => '<a href="https://wpnav.com/document/wpnav-links" target="_blank">' . esc_html__('Documentation', 'wpnav-links') . '</a>',
         );
         return array_merge($links, $row_meta);
     }
@@ -508,7 +508,7 @@ function wpnav_enqueue_frontend_styles() {
         return;
     }
 
-    if (!is_admin()) {
+    if (!is_admin() && !empty($options['show_external_icon'])) {
         wp_enqueue_style(
             'wpnav-external-indicator',
             WPNAV_LINKS_PLUGIN_URL . 'assets/css/external-indicator.css',
@@ -530,3 +530,12 @@ function wpnav_daily_maintenance_tasks() {
     $table_name = $wpdb->prefix . WPNAV_LINKS_TABLE;
     $wpdb->query("OPTIMIZE TABLE $table_name");
 }
+
+require_once plugin_dir_path(__FILE__) . 'lib/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5p3\PucFactory;
+
+$WpNavLinksUpdateChecker = PucFactory::buildUpdateChecker(
+    'https://updates.weixiaoduo.com/wpnav-links.json',
+    __FILE__,
+    'wpnav-links'
+);

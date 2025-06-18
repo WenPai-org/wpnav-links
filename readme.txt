@@ -1,5 +1,5 @@
 === WPNav Links ===
-Contributors: WenPai
+Contributors: wpfanyi,wenpai,
 Tags: external links, redirect, security, links, SEO
 Requires at least: 5.0
 Tested up to: 6.4
@@ -154,11 +154,11 @@ Major update with enhanced user experience, internationalization support, and im
 
 == Support ==
 
-For support, please visit our [support forum](https://example.com/support) or [documentation](https://example.com/docs).
+For support, please visit our [support forum](https://sharecms.com/support) or [documentation](https://wpnav.com/document/wpnav-links).
 
 == Contributing ==
 
-We welcome contributions! Please visit our [GitHub repository](https://github.com/example/wpnav-links) to report issues or submit pull requests.
+We welcome contributions! Please visit our [GitHub repository](https://github.com/WenPai-org/wpnav-links) to report issues or submit pull requests.
 
 == Privacy Policy ==
 
